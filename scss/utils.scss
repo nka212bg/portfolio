@@ -1,0 +1,194 @@
+.button {
+  position: relative;
+  font-size: 0.8rem;
+  width: fit-content;
+  min-width: 120px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 6px;
+  border-radius: 100px;
+  color: white;
+  background: linear-gradient(153deg, var(--primary-3), var(--primary-8));
+  transition: box-shadow 0.3s;
+  text-shadow: 0 1px 2px var(--primary-9);
+  font-weight: bold;
+  height: 32px;
+  box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  outline: none;
+
+  &--download {
+    background: linear-gradient(153deg, var(--secondary-4), var(--secondary-9));
+    text-shadow: 0 1px 2px var(--secondary-9);
+  }
+
+  &--buy {
+    background: linear-gradient(153deg, var(--accent-4), var(--accent-9));
+  }
+
+  &--edit {
+    background: linear-gradient(153deg, rgb(255, 133, 200), rgb(182, 0, 0));
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 10%), 0px 4px 6px 0px rgb(0 0 0 / 26%);
+    background-size: 200% 100%;
+    animation: gradient-animation 5s ease infinite;
+  }
+
+  &:disabled {
+    background: linear-gradient(153deg, rgb(231, 231, 231), rgb(100, 100, 100));
+    color: rgb(223, 223, 223);
+    text-shadow: 0 1px 2px rgb(70, 70, 70);
+  }
+
+  &:active {
+    transition: box-shadow none;
+    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 20%);
+  }
+
+  &::after {
+    position: absolute;
+    content: attr(icon);
+    text-shadow: none;
+    left: 9px;
+    top: 7px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    text-shadow: none;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50%;
+    width: 160%;
+    height: 250%;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+// gradient animation
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+fieldset {
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: var(--primary-1);
+  border-radius: 6px;
+  padding: 8px;
+
+  legend {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    background: var(--primary-3);
+    @include square(30px);
+    @include flex-pos();
+    font-size: 0.8rem;
+    border-radius: 100px;
+    margin-left: -0.3rem;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--primary-10);
+    padding: 4px 0;
+    padding-left: 8px;
+
+    ::placeholder {
+      color: var(--primary-3);
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+      color: var(--primary-3);
+    }
+
+    ::-ms-input-placeholder {
+      color: var(--primary-3);
+    }
+  }
+
+  input {
+    margin-top: -2px;
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    height: 12vmin;
+    min-height: 30px;
+    max-height: 30vh;
+    resize: vertical;
+  }
+
+  select {
+  }
+}
+
+.pills-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+
+  &__item {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 100px;
+    border: 1px solid var(--primary-4);
+    cursor: pointer;
+
+    &.active {
+      background: var(--primary-3);
+    }
+  }
+}
+
+.spin {
+  animation: spinner 2s linear infinite !important;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floater {
+  from {
+    transform: translate(0, -8px);
+  }
+  35% {
+    transform: translate(0, 8px);
+  }
+  to {
+    transform: translate(0, -8px);
+  }
+}

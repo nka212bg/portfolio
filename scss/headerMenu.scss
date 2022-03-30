@@ -1,0 +1,75 @@
+.app-header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vmin;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &__logo {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    &__company-name {
+      font-family: var(--font-special);
+      font-size: 1.7rem;
+      margin-bottom: -5px;
+      // font-weight: bold;
+      color: var(--primary-6);
+    }
+  }
+
+  &__right {
+    position: relative;
+    padding-right: 2rem;
+    @include flex-pos();
+
+    &__social-link {
+      color: var(--primary-3);
+      margin-right: 1.3rem;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--primary-6);
+      }
+    }
+
+    &__lang-switch {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background: white;
+      top: -10px;
+      right: 0px;
+      border-radius: 100px;
+      cursor: pointer;
+      padding: 2px;
+      margin-left: 6px;
+      z-index: 1;
+
+      .switch-item {
+        width: 30px; 
+        height: 30px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        text-transform: uppercase;
+        transition: background 0.5s;
+
+        &:hover {
+          background: var(--accent-3);
+        }
+      }
+    }
+  }
+}
+
+

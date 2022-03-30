@@ -1,0 +1,85 @@
+:root {
+  --bigger--font-size: 20px;
+  --big--font-size: 18px;
+  --small--font-size: 14px;
+  --smaller--font-size: 12px;
+
+  --font-family: nk_icons, "Open Sans", sans-serif;
+  --font-special: Special, nk_icons, "Open Sans", sans-serif;
+
+  --scrollbar-color: var(--primary-3);
+
+  // COLORS
+  $colorOffsets: (
+    "1": 95%,
+    "2": 90%,
+    "3": 80%,
+    "4": 70%,
+    "5": 60%,
+    "6": 50%,
+    "7": 40%,
+    "8": 30%,
+    "9": 20%,
+    "10": 10%,
+    "11": 5%,
+  );
+
+  @each $key, $value in $colorOffsets {
+    --primary-#{$key}: hsl(40deg 50% #{$value});
+    --secondary-#{$key}: hsl(175deg 100% #{$value});
+    --accent-#{$key}: hsl(45deg 100% #{$value});
+    --gray-#{$key}: hsl(0deg 0% #{$value});
+
+    .text--primary-#{$key} {
+      color: var(--primary-#{$key}) !important;
+    }
+
+    .text--secondary-#{$key} {
+      color: var(--secondary-#{$key}) !important;
+    }
+
+    .text--accent-#{$key} {
+      color: var(--accent-#{$key}) !important;
+    }
+
+    .text--gray-#{$key} {
+      color: var(--gray-#{$key}) !important;
+    }
+
+    .bg--primary-#{$key} {
+      background-color: var(--primary-#{$key}) !important;
+    }
+
+    .bg--secondary-#{$key} {
+      background-color: var(--secondary-#{$key}) !important;
+    }
+
+    .bg--accent-#{$key} {
+      background-color: var(--accent-#{$key}) !important;
+    }
+
+    .bg--gray-#{$key} {
+      background-color: var(--gray-#{$key}) !important;
+    }
+  }
+
+  $colors: (
+    "success": green,
+    "alert": orange,
+    "error": red,
+    "white": white,
+    "black": black,
+  );
+
+  @each $key, $value in $colors {
+    --#{$key}: #{$value};
+
+    .text--#{$key} {
+      color: var(--#{$key}) !important;
+    }
+
+    .bg--#{$key} {
+      background-color: var(--#{$key}) !important;
+    }
+  }
+}

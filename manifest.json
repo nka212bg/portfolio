@@ -1,0 +1,28 @@
+{
+    "name": "Nik Atanasov portfolio",
+    "short_name": "Nik Atanasov portfolio",
+    "description": "Nik Atanasov portfolio",
+    "useWebmanifestExtension": false,
+    "background_color": "#2d3748",
+    "theme_color": "#2d3748",
+    "display_override": [
+        "fullscreen",
+        "minimal-ui"
+    ],
+    "display": "standalone",
+    "start_url": "/?standalone=true",
+    "orientation": "portrait-primary",
+    "lang": "none",
+    "categories": [
+        "porfolio",
+        "personal"
+    ],
+    "icons": [
+        {
+            "src": "img/logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

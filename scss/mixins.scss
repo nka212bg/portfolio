@@ -1,0 +1,27 @@
+@mixin square($size) {
+  width: $size;
+  height: $size;
+  min-width: $size;
+  max-width: $size;
+  min-height: $size;
+  max-height: $size;
+}
+
+@mixin flex-pos($v-pos: center, $h-pos: center, $direction: row) {
+  display: flex;
+  align-items: $v-pos;
+  justify-content: $h-pos;
+  flex-direction: $direction;
+}
+
+@mixin bg-img($i1, $i2: false) {
+  @if $i2 {
+    background-image: url($i1), url($i2);
+  } @else {
+    background-image: url($i1);
+  }
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

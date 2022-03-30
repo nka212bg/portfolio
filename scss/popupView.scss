@@ -1,0 +1,106 @@
+.popup-view {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &__container {
+    position: relative;
+    width: 100vw;
+    max-width: 400px;
+    height: fit-content;
+    max-height: 95vh;
+    border-radius: 22px;
+    margin: 0 5vmin;
+    @include bg-img($i1: "/img/anime-bg3.svg");
+    background-color: white;
+
+    &__close {
+      position: absolute;
+      font-size: 1.5rem;
+      line-height: 0;
+      background: var(--primary-3);
+      @include square(30px);
+      @include flex-pos();
+      padding-bottom: 2px;
+      top: 14px;
+      right: 14px;
+      border-radius: 100px;
+      cursor: pointer;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+
+    &__top {
+      width: 100%;
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+      @include flex-pos($direction: column);
+      text-align: center;
+      height: 32vmin;
+      min-height: 250px;
+      padding: 1rem;
+      padding-bottom: 0;
+
+      &-icon {
+        font-size: 7rem;
+        margin-bottom: 1rem;
+        color: var(--secondary-7);
+        animation: floater 10s infinite;
+      }
+
+      &-header {
+        font-weight: bold;
+        font-size: 2.1rem;
+        margin-left: -4px;
+        color: var(--primary-4);
+      }
+
+      &-text {
+        font-weight: 100;
+        font-size: 0.9rem;
+        // color: var(--secondary-8);
+      }
+    }
+
+    &__bottom {
+      @include flex-pos($direction: column);
+      padding: 1.5rem;
+
+      .bottom-fieldset {
+        flex-grow: 1;
+        margin-bottom: 2rem;
+      }
+
+      .bottom-buttons {
+        width: 100%;
+        @include flex-pos($h-pos: flex-end);
+
+        .button {
+          min-width: 120px;
+          width: auto;
+
+          &:last-child {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    &__outer-content {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      transform: translateY(100%);
+    }
+  }
+}

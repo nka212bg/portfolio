@@ -1,0 +1,20 @@
+.footer-view {
+  .footer-menu {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.3rem;
+    justify-content: center;
+
+    &__item {
+      color: var(--primary-5);
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+  }
+}

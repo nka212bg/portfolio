@@ -1,0 +1,101 @@
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.item-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 300px;
+  max-width: 410px;
+  margin-bottom: 100px;
+
+  &__top {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 480px;
+    border-radius: 4px;
+    // box-shadow: 3px 4px 14px rgb(0 0 0 / 10%);
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      transition: transform 4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+      &:hover {
+        transform: scale(105%);
+      }
+    }
+
+    &:hover {
+      // transform: rotate(0deg) scale(140%) translateY(-36px);
+      // transform: translateY(-6px);
+
+      &::after {
+        border-radius: 100px;
+      }
+    }
+
+    & .img-indicators {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      top: 10px;
+      left: 10px;
+      z-index: 1;
+
+      & .indicator {
+        width: 6px;
+        height: 6px;
+        background: white;
+        border-radius: 10px;
+        margin-right: 8px;
+        cursor: pointer;
+        transition: transform 0.5s, box-shadow 0.5s;
+        box-shadow: inset 0 0px 0px 1px rgb(0 0 0 / 20%);
+
+        &.active {
+          background: rgb(0 0 0 / 20%);
+          box-shadow: inset 0 0px 0px 1px white;
+          // transform: scale(1.2);
+        }
+      }
+    }
+
+    &--free::after {
+      content: "FREE";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      border-radius: 4px;
+      background: linear-gradient(153deg, var(--secondary-4), var(--secondary-9));
+      pointer-events: none;
+      transition: box-shadow 0.5s, border-radius 1s;
+    }
+  }
+
+  &__bottom {
+    padding-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
