@@ -25,9 +25,9 @@
   );
 
   @each $key, $value in $colorOffsets {
-    --primary-#{$key}: hsl(40deg 50% #{$value});
+    --primary-#{$key}: hsl(210deg 50% #{$value});
     --secondary-#{$key}: hsl(175deg 100% #{$value});
-    --accent-#{$key}: hsl(45deg 100% #{$value});
+    --accent-#{$key}: hsl(341deg 100% #{$value});
     --gray-#{$key}: hsl(0deg 0% #{$value});
 
     .text--primary-#{$key} {

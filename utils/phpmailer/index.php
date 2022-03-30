@@ -27,11 +27,11 @@ function sendEmail($from, $subject, $text = null)
             $mail->Port = 587;
 
 
-            $mail->Username = $_ENV["email"];
+            $mail->Username = $to;
             $mail->Password = $_ENV["password"];
 
             // Sender and recipient settings
-            $mail->SetFrom($from, $_ENV["email"]);
+            $mail->SetFrom($from, $to);
             $mail->addAddress($to);
 
             // Setting the email content

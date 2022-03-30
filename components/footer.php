@@ -9,9 +9,9 @@
     </div>
 
     <template v-if="showFeedback">
-        <?php include  'private/components/popupFeedback.php' ?>
+        <?php include  'components/popupFeedback.php' ?>
     </template>
 </div>
-</body>
+</body> 
 
 </html>

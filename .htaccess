@@ -1,0 +1,19 @@
+ErrorDocument 404 /
+RewriteEngine On
+RewriteBase /
+
+# remove .php from the url
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ $1.php [NC,L]
+  
+# compression
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript application/json
+
+# caching
+<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|svg|html|htm|xml|txt|xsl|ttf|css|js)$">
+    Header set Cache-Control "max-age=31536050"
+</FilesMatch>
+

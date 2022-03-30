@@ -3,5 +3,4 @@
 .env
 .well-known
 *.log
-.htaccess
 package-lock.json

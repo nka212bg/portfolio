@@ -7,53 +7,12 @@ if ("serviceWorker" in navigator) {
 
 // JS
 const $n = {
-    async subscribe(email, fileName, filePath) {
-        await fetch(`private/model/userRequest?subscribe`, { method: "POST", body: JSON.stringify({ email }) }).then(e => e.text()).then(e => {
-            const link = document.createElement("a");
-            link.download = fileName;
-            link.href = filePath;
-            link.click();
-
-            console.log(e);
-            return e;
-        })
-    },
     async feedback(email, text) {
-        await fetch(`private/model/userRequest?feedback`, { method: "POST", body: JSON.stringify({ text, email }) }).then(e => e.text()).then(e => {
+        await fetch(`model/userRequest?feedback`, { method: "POST", body: JSON.stringify({ text, email }) }).then(e => e.text()).then(e => {
             console.log("feedback responce -> ", e);
             return e;
         })
     },
-    async saveItem(item) {
-        await fetch(`private/model/userRequest?saveItem`, { method: "POST", body: JSON.stringify(item) }).then(e => e.text()).then(e => {
-            console.log("saveItem responce -> ", e);
-            return e;
-        })
-    },
-    async itemAddFiles({ itemId, about }) {
-        const files = await uploadFile({ multiple: true });
-
-        await fetch(`private/model/userRequest?itemAddFiles`, { method: "POST", body: JSON.stringify({ files: files.map(e => ({ base64: e.base64, meta: e.meta })), info: { itemId, about } }) })
-            .then(e => e.text())
-            .then(e => {
-                setTimeout(location.reload(), 400);
-            });
-
-    },
-    itemDelete(id) {
-        confirm('Delete item !?') && fetch(`private/model/userRequest?itemDelete=${id}`)
-            .then(e => e.text())
-            .then(e => {
-                setTimeout(() => location.href = "/", 400);
-            });
-    },
-    itemDeleteFile(filePath) {
-        confirm('Delete file !?') && fetch(`private/model/userRequest?itemDeleteFile`, { method: "POST", body: JSON.stringify({ filePath }) })
-            .then(e => e.text())
-            .then(e => {
-                setTimeout(location.reload(), 400);
-            });
-    }
 }
 
 

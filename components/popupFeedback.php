@@ -14,7 +14,7 @@
         <!-- BOTTOM -->
         <form @submit.prevent="loading = true, $n.feedback($refs.emailInput.value, $refs.feedbackText.value).then(e=>{        
             // showFeedback = false, document.querySelector('html').classList.remove('hide-scroll');     
-            location.reload();
+            // location.reload();
         })" class="popup-view__container__bottom">
             <fieldset class="bottom-fieldset">
                 <legend></legend>
@@ -30,6 +30,6 @@
                 <div class="button button" style="min-width: 100px" @click="showFeedback = false, document.querySelector('html').classList.remove('hide-scroll')"><?= $t['cancel'] ?></div>
             </div>
         </form>
-        <a href="privacy" target="_blank" class="popup-view__container__outer-content text--primary-2 text-center smaller--font-size link pt-1"><?= $t['privacyLinkText'] ?></a>
+        <!-- <a href="privacy" target="_blank" class="popup-view__container__outer-content text--primary-2 text-center smaller--font-size link pt-1"><?= $t['privacyLinkText'] ?></a> -->
     </div>
 </div>

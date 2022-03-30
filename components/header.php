@@ -1,15 +1,7 @@
 <?php
 $netProtocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
-$i18n = require "private/utils/locale/index.php";
+$i18n = require "utils/locale/index.php";
 $t = $i18n["language"];
-$subscribed = isset($_COOKIE['subscribed']) ? $_COOKIE['subscribed'] : '';
-
-if (isset($_GET["password"])) {
-    setcookie('password', password_hash($_GET["password"], PASSWORD_DEFAULT), time() + (86400 * 30), "/"); // 86400 = 1 day
-    return header("Refresh:0; url=/");
-}
-$isAdmin = password_verify('qweasdzxc123QWE', isset($_COOKIE["password"]) ? $_COOKIE['password'] : '');
-
 ?>
 
 <!DOCTYPE html>

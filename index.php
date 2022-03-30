@@ -1,10 +1,9 @@
 <?php
 // session_start();
-require 'private/components/header.php';
-require 'private/components/headerMenu.php';
+require 'components/header.php';
+require 'components/headerMenu.php';
 
-require 'private/model/items.php';
-$cardItems = Items::getAllItems($isAdmin);
+
 ?>
 
 <!-- PAGE HERO -->
@@ -17,8 +16,8 @@ $cardItems = Items::getAllItems($isAdmin);
 
 <!-- ITEMS --> 
 <div class="items-container mb-6">
-    <?php foreach ($cardItems as $card) include  'private/components/itemCard.php' ?>
+  ehooo
 </div>
 
  
-<?php require 'private/components/footer.php' ?> 
+<?php require 'components/footer.php' ?> 
