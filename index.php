@@ -1,9 +1,6 @@
 <?php
-// session_start();
 require 'components/header.php';
 require 'components/headerMenu.php';
-
-
 ?>
 
 <!-- PAGE HERO -->
@@ -14,10 +11,5 @@ require 'components/headerMenu.php';
     </div>
 </div>
 
-<!-- ITEMS --> 
-<div class="items-container mb-6">
-  ehooo
-</div>
 
- 
-<?php require 'components/footer.php' ?> 
+<?php require 'components/footer.php' ?>

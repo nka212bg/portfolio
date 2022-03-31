@@ -15,7 +15,7 @@ $t = $i18n["language"];
 
     <meta name="description" content="<?= $meta_description ?? $t['meta_description'] ?>">
     <meta name="keywords" content="<?= $meta_keywords ?? $t['meta_keywords'] ?>">
-    <link rel="icon" type="image/png" href="<?= $icon ?? 'img/fav.png' ?>">
+    <link rel="icon" type="image/svg+xml" href="<?= $icon ?? 'img/logo.svg' ?>">
 
 
 

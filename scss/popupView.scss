@@ -18,8 +18,8 @@
     max-height: 95vh;
     border-radius: 22px;
     margin: 0 5vmin;
-    @include bg-img($i1: "/img/anime-bg3.svg");
-    background-color: white;
+    // @include bg-img($i1: "/img/anime-bg3.svg");
+    background-color: rgba(39, 39, 39, 0.712);
 
     &__close {
       position: absolute;
@@ -59,16 +59,16 @@
       }
 
       &-header {
-        font-weight: bold;
+        font-weight: 100;
         font-size: 2.1rem;
         margin-left: -4px;
-        color: var(--primary-4);
+        color: var(--gray-1);
       }
 
       &-text {
         font-weight: 100;
-        font-size: 0.9rem;
-        // color: var(--secondary-8);
+        font-size: 0.8rem;
+        color: var(--gray-5);
       }
     }
 

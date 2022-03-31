@@ -3,17 +3,20 @@
     langMenuState : false, 
     langs: <?= json_encode($i18n["availableLanguages"]) ?> , 
     selectedLang: "<?= $i18n["selectedLanguage"] ?>",
-    hideMenuLogo: "<?= isset($hideMenuLogo) && $hideMenuLogo ?>"
+    hideMenuLogo: "<?= isset($hideMenuLogo) && $hideMenuLogo ?>",
+    showFeedback : false, 
+    loading: false
 }'>
 
     <a v-if="!hideMenuLogo" href="/?t=<?= $i18n["selectedLanguage"] ?>" class="app-header-menu__left">
-        <img src="/img/logo.svg" class="app-header-menu__left__logo" alt="Inna’s Journals logo" />
-        <h1 class="app-header-menu__left__company-name"><?= $t['title'] ?></h1>
+        <img src="/img/avatar.png" class="app-header-menu__left__logo" alt="logo" />
+        <h1 class="app-header-menu__left__company-name mobile-hide"><?= $t['title'] ?></h1>
     </a>
     <div v-else></div>
     <div class="app-header-menu__right">
-        <!-- <a href="//instagram.com/innasjournals/" target="_blank" class="app-header-menu__right__social-link instagram" :class="{' text--white': hideMenuLogo}"></a> -->
-        <!-- <a href="//pinterest.ca/innasjournals/" target="_blank" class="app-header-menu__right__social-link pinterest" :class="{' text--white': hideMenuLogo}"></a> -->
+        <a href="https://github.com/nka212bg" target="_blank" class="app-header-menu__right__social-link big--font-size text--white"></a>
+        <a href="https://gitlab.com/nka212bg" target="_blank" class="app-header-menu__right__social-link big--font-size text--alert"></a>
+        <div class="app-header-menu__right__social-link bigger--font-size text--secondary-8" @click="showFeedback = true, document.querySelector('html').classList.add('hide-scroll')"></div>
         <div class="app-header-menu__right__lang-switch" :class="{'active': langMenuState}" @click="langMenuState = !langMenuState">
             <div class="switch-item">{{selectedLang}}</div>
             <div v-show="langMenuState">
@@ -23,4 +26,8 @@
             </div>
         </div>
     </div>
+
+    <template v-if="showFeedback">
+        <?php include  'components/popupFeedback.php' ?>
+    </template>
 </div>
