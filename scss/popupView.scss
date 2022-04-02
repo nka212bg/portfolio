@@ -15,11 +15,30 @@
     width: 100vw;
     max-width: 400px;
     height: fit-content;
-    max-height: 95vh;
-    border-radius: 22px;
-    margin: 0 5vmin;
+    max-height: calc(100vh - 60px);
+    border-radius: 12px;
+    margin: 6%;
+    overflow: hidden;
     // @include bg-img($i1: "/img/anime-bg3.svg");
-    background-color: rgba(39, 39, 39, 0.712);
+    background-color: rgba(32, 32, 32, 0.92);
+
+    &--fullWidth {
+      max-width: calc(100vw - 60px);
+      height: 100%;
+      margin: 0;
+    }
+
+    &-content {
+      position: absolute;
+      overflow-x: hidden;
+      overflow-y: auto;
+      top: 64px;
+      left: 20px;
+      right: 12px;
+      bottom: 16px;
+      padding-right: 0.5rem;
+      padding-bottom: 50px;
+    }
 
     &__close {
       position: absolute;
@@ -29,8 +48,8 @@
       @include square(30px);
       @include flex-pos();
       padding-bottom: 2px;
-      top: 14px;
-      right: 14px;
+      top: 8px;
+      right: 8px;
       border-radius: 100px;
       cursor: pointer;
       transition: transform 0.3s;

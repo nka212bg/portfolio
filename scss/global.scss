@@ -5,6 +5,7 @@
 @import "./headerMenu.scss";
 @import "./homePage.scss";
 @import "./popupView.scss";
+@import "./itemView.scss";
 @import "./footerView.scss";
 
 *,
@@ -22,7 +23,7 @@ body {
   padding: 0;
   font-family: var(--font-family);
   font-weight: 400;
-  letter-spacing: -0.03rem;
+  letter-spacing: -0.015rem;
   color: var(--primary-7);
   vertical-align: baseline;
   scrollbar-width: thin;
@@ -78,7 +79,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar-color);
   border-radius: 100px;
-  border: 1px solid white;
+  border: 1px solid var(--scrollbar-border);
 }
 
 ::-webkit-scrollbar-thumb:hover {

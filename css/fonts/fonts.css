@@ -1,38 +1,48 @@
-
 /* icons */
 @font-face {
-font-family: "nk_icons";
-font-style: normal;
-src: url("./nk_icons.ttf?") format("truetype");
-font-weight: normal;
-font-display: swap;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  font-family: "nk_icons";
+  font-style: normal;
+  src: url("./nk_icons.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* logos */
+@font-face {
+  font-family: "logos";
+  font-style: normal;
+  src: url("./logos.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-font-family: "Open Sans";
-font-style: normal;
-font-weight: 300;
-font-stretch: normal;
-font-display: swap;
-src: url("./OpenSans-Light.ttf") format("truetype");  
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("./OpenSans-Light.ttf") format("truetype");
 }
 
 @font-face {
-font-family: "Open Sans";
-font-style: normal;
-font-weight: 400;
-font-stretch: normal;
-font-display: swap;
-src: url("./OpenSans-Regular.ttf") format("truetype");
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("./OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
-font-family: "Open Sans";
-font-style: normal;
-font-weight: 700;
-font-stretch: normal;
-font-display: swap;
-src: url("./OpenSans-Bold.ttf") format("truetype");
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("./OpenSans-Bold.ttf") format("truetype");
 }

@@ -13,7 +13,7 @@
 
         <!-- BOTTOM -->
         <form @submit.prevent="loading = true, $n.feedback($refs.emailInput.value, $refs.feedbackText.value).then(e=>{        
-            // showFeedback = false, document.querySelector('html').classList.remove('hide-scroll');     
+            showFeedback = false, document.querySelector('html').classList.remove('hide-scroll');     
             // location.reload();
         })" class="popup-view__container__bottom">
             <fieldset class="bottom-fieldset">

@@ -6,8 +6,10 @@
 
   --font-family: nk_icons, "Open Sans", sans-serif;
   --font-special: Special, nk_icons, "Open Sans", sans-serif;
+  --font-logos: logos, "Open Sans", sans-serif;
 
-  --scrollbar-color: var(--primary-3);
+  --scrollbar-color: var(--gray-9);
+  --scrollbar-border: var(--gray-8);
 
   // COLORS
   $colorOffsets: (
