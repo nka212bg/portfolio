@@ -1,0 +1,25 @@
+{
+  "tags": {
+    "Dev": { "icon": "", "color": "yellow" },
+    "Design": { "icon": "", "color": "dodgerblue" },
+    "javascript": { "icon": "", "color": "yellow" },
+    "html": { "icon": "", "color": "#f5792a" },
+    "css": { "icon": "", "color": "#1572b6" },
+    "sass": { "icon": "", "color": "#c69" },
+    "illustrator": { "icon": "", "color": "#f5792a" },
+    "photoshop": { "icon": "", "color": "dodgerblue" },
+    "xd": { "icon": "", "color": "#ff2bc2" },
+    "blender": { "icon": "", "color": "#f5792a" },
+    "java": { "icon": "", "color": "#1572b6" },
+    "linux": { "icon": "", "color": "#6f6f6f" },
+    "mongodb": { "icon": "", "color": "#47a248" },
+    "mysql": { "icon": "", "color": "#1572b6" },
+    "nodejs": { "icon": "", "color": "#393" },
+    "npm": { "icon": "", "color": "#cb3837" },
+    "vue": { "icon": "", "color": "#4fc08d" },
+    "nuxt": { "icon": "", "color": "#00c58e" },
+    "php": { "icon": "", "color": "#777bb4" },
+    "wordpress": { "icon": "", "color": "#21759b" },
+    "python": { "icon": "", "color": "#3776ab" }
+  }
+}

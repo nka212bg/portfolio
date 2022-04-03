@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Item title text 1",
+    "description": "Feelings potatoes break cats minute carried newspaper rear.",
+    "img": "/items/img/door2.jpg",
+    "category": "Dev",
+    "tags": ["html", "javascript", "nuxt"]
+  },
+  {
+    "title": "Item title text 2",
+    "description": "Minute carried newspaper rear feelings potatoes break cats.Minute carried newspaper rear feelings potatoes break cats.Minute carried newspaper rear feelings potatoes break cats.",
+    "img": "/items/img/Capture.PNG",
+    "category": "Design",
+    "tags": ["blender", "xd", "nuxt"]
+  },
+  {
+    "title": "Item title text 1",
+    "description": "Feelings potatoes break cats minute carried newspaper rear.Minute carried newspaper rear feelings potatoes break cats.",
+    "img": "/items/img/door2.jpg",
+    "category": "Design",
+    "tags": ["html", "javascript", "nuxt"]
+  },
+  {
+    "title": "Item title text 2",
+    "description": "Minute carried newspaper rear feelings potatoes break cats.",
+    "img": "/items/img/Capture.PNG",
+    "category": "Design",
+    "tags": ["blender", "xd"]
+  },
+  {
+    "title": "Item title text 1",
+    "description": "Feelings potatoes break cats minute carried newspaper rear.",
+    "img": "/items/img/door2.jpg",
+    "category": "Design",
+    "tags": ["html", "javascript", "nuxt"]
+  },
+  {
+    "title": "Item title text 2",
+    "description": "Minute carried newspaper rear feelings potatoes break cats.",
+    "img": "/items/img/Capture.PNG",
+    "category": "Design",
+    "tags": ["blender", "xd"]
+  },
+  {
+    "title": "Item title text 1",
+    "description": "Feelings potatoes break cats minute carried newspaper rear.",
+    "img": "/items/img/door2.jpg",
+    "category": "Design",
+    "tags": ["html", "javascript", "nuxt"]
+  },
+  {
+    "title": "Item title text 2",
+    "description": "Minute carried newspaper rear feelings potatoes break cats.",
+    "img": "/items/img/Capture.PNG",
+    "category": "Design",
+    "tags": ["blender", "xd"]
+  }
+]
