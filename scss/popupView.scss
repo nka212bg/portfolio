@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(56 56 56 / 82%);
 
   &__container {
     position: relative;
@@ -19,11 +19,15 @@
     border-radius: 12px;
     margin: 6%;
     overflow: hidden;
-    // @include bg-img($i1: "/img/anime-bg3.svg");
-    background-color: rgba(32, 32, 32, 0.92);
+    background-color: #3e3e3e;
+    box-shadow: 0 0px 0px 4px rgb(255 255 255 / 3%), 0 2px 36px 11px rgb(0 0 0 / 37%);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     &--fullWidth {
-      max-width: calc(100vw - 60px);
+      max-width: calc(100vw - 10%);
       height: 100%;
       margin: 0;
     }
@@ -44,18 +48,42 @@
       position: absolute;
       font-size: 1.5rem;
       line-height: 0;
-      background: var(--primary-3);
+      // background: var(--primary-3);
+      color: white;
       @include square(30px);
       @include flex-pos();
       padding-bottom: 2px;
-      top: 8px;
-      right: 8px;
+      top: 6px;
+      right: 6px;
       border-radius: 100px;
       cursor: pointer;
       transition: transform 0.3s;
 
       &:hover {
         transform: rotate(90deg);
+      }
+    }
+
+    &__nav {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0 1.5rem;
+
+      & .nav-arrow {
+        background: rgb(64 64 64 / 72%);
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        cursor: pointer;
       }
     }
 

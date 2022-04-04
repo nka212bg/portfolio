@@ -20,6 +20,7 @@
     "nuxt": { "icon": "", "color": "#00c58e" },
     "php": { "icon": "", "color": "#777bb4" },
     "wordpress": { "icon": "", "color": "#21759b" },
-    "python": { "icon": "", "color": "#3776ab" }
+    "python": { "icon": "", "color": "#3776ab" },
+    "github": { "icon": "", "color": "#3776ab" }
   }
 }

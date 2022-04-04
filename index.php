@@ -3,35 +3,44 @@ require 'components/header.php';
 require 'components/headerMenu.php';
 ?>
 
-<div v-scope='{ 
+<div class="home" v-scope='{ 
     items: <?= file_get_contents("items/items.json") ?>,
     common: <?= file_get_contents("items/common.json") ?>,
     selectedItem: null,
+    selectedItemIndex: null,
     filterTag : null,
     filterBy(val){
         const items = JSON.parse(JSON.stringify(this.items));
-        items.forEach(e => val && !e.tags.includes(val) && e.category != val ? (e.hide = true) : delete e.hide);
+        items.forEach(e => val && !e.tags?.includes(val) && e.category != val ? (e.hide = true) : delete e.hide);
         this.items = items;
         this.filterTag = val;
-    },   
+        window.scrollTo(0, 350);
+    }, 
+    changeItem(n){
+        this.selectedItemIndex = this.selectedItemIndex + n;
+        this.selectedItemIndex >= this.items.length && (this.selectedItemIndex = 0);
+        this.selectedItemIndex < 0 && (this.selectedItemIndex = this.items.length - 1);
+
+        this.selectedItem = this.items[this.selectedItemIndex];
+    }  
 }'>
 
-
-    <div class="m-6 p-6 flex-center flex-middle">Something, something</div>
+    <!-- {{ selectedItem = items[0] }} -->
+    <div class="home-hero">Something, something</div>
 
     <!-- ITEMS -->
     <div style="position: relative;">
         <div v-if="filterTag" class="flex-center smaller--font-size link text--white" style="position: absolute; top: 0; left: 33px" @click="filterBy(null)"><span :style="{color: common.tags[filterTag].color, fontFamily: 'var(--font-logos)' }" class="small--font-size mr-05">{{common.tags[filterTag].icon}}</span> filtered by {{filterTag}}</div>
         <div class="home-portfolio p-2">
-            <div v-for="(item, i) in items" :key="i" v-show="!item.hide" class="portfolio-item" @click="selectedItem = item">
-                <div class="img" :style="`background-image: url('${item.img}')`"></div>
-                <div class="portfolio-item-content">
-                    <div class="item-title">{{item.title}} {{item.hide}}</div>
-                    <div class="item-description">{{item.description}}</div>
-                    <div class="item-bottom">
-                        <div class="item-category" @click.stop="filterBy(item.category)">{{item.category}}</div>
+            <div v-for="(item, i) in items" :key="i" v-show="!item.hide" class="portfolio-item">
+                <div class="img" :style="`background-image: url('${item.img}')`" @click="selectedItem = item, selectedItemIndex = i, document.querySelector('html').classList.add('hide-scroll')"></div>
+                <div v-if="item.title || item.description || item.category || (item.tags && item.tags.length)" class="portfolio-item-content">
+                    <div v-if="item.title" class="item-title" v-html="item.title"></div>
+                    <div v-if="item.description" class="item-description" v-html="item.description"></div>
+                    <div v-if="item.category || (item.tags && item.tags.length)" class="item-bottom">
+                        <div class="item-category" @click="filterBy(item.category)">{{item.category}}</div>
                         <div class="item-tags">
-                            <span v-for="(tag, t) in item.tags" :key="t" class="item-tags-tag" :title="tag" :style="{color: common.tags[tag].color}" @click.stop="filterBy(tag)">{{common.tags[tag].icon}}</span>
+                            <span v-for="(tag, t) in item.tags" :key="t" class="item-tags-tag" :title="tag" :style="{color: common.tags[tag].color}" @click="filterBy(tag)">{{common.tags[tag].icon}}</span>
                         </div>
                     </div>
                 </div>
@@ -41,10 +50,28 @@ require 'components/headerMenu.php';
 
 
     <div v-if="selectedItem" class="popup-view">
-        <div class="popup-view__container popup-view__container--fullWidth">
+        <div class="popup-view__container popup-view__container--fullWidth" :style="`background-image: url('${selectedItem.img}')`">
             <!-- TOP -->
-            <div class="popup-view__container__close" @click="selectedItem = null">&times;</div>
-            <h1 class="ml-1 mt-05">{{selectedItem}}</h1>
+            <div class="popup-view__container__close" @click="selectedItem = null, document.querySelector('html').classList.remove('hide-scroll')">&times;</div>
+            <!-- NAVIGATION -->
+            <div class="popup-view__container__nav">
+                <div class="nav-arrow" @click="changeItem(-1)"></div>
+                <div class="nav-arrow" @click="changeItem(1)"></div>
+            </div>
+
+            <div class="home-popup">
+                <div class="home-popup-content">
+
+                    <div v-if="selectedItem.title || selectedItem.category" class="item-title" v-html="`${selectedItem.title || ''}${selectedItem.title && selectedItem.category ? ' | ' : ''}${selectedItem.category || ''}`"></div>
+                    <div v-if="selectedItem.description" class="item-description" v-html="selectedItem.description"></div>
+
+                    <div v-if="selectedItem.tags && selectedItem.tags.length" class="item-bottom">
+                        <div class="item-tags">
+                            <span v-for="(tag, t) in selectedItem.tags" :key="t" class="item-tags-tag" :title="tag" :style="{color: common.tags[tag].color}">{{common.tags[tag].icon}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
