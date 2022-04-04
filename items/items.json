@@ -35,8 +35,10 @@
     "tags": ["html", "javascript", "nuxt"]
   },
   {
+    "title": "Item title text 33",
+    "description": "Feelings potatoes break cats minute. Feelings potatoes break cats minute carried newspaper rear.<br><a href=\"https://github.com/nka212bg/portfolio\" target=\"_blank\"> Repository</a>",
     "img": "/items/img/Capture.PNG",
-    "description": "Feelings potatoes break cats minute. Feelings potatoes break cats minute carried newspaper rear. <a href=\"https://github.com/nka212bg/portfolio\" target=\"_blank\"> Repository</a>",
+    "category": "Dev",
     "tags": ["html", "javascript", "nuxt", "github"]
   }
 ]

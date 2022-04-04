@@ -5,6 +5,29 @@
     align-items: center;
     justify-content: center;
     min-height: calc(100vh - 300px);
+    text-align: center;
+
+    & img {
+      width: 20vmin;
+      height: 20vmin;
+      min-width: 120px;
+      min-height: 120px;
+      object-fit: contain;
+      margin-bottom: 2rem;
+    }
+
+    & .home-hero-text {
+      padding: 0 7%;
+      & .hero-title {
+        font-size: 2rem;
+        font-weight: 100;
+        margin-bottom: 0.3rem;
+      }
+
+      & .hero-description {
+        font-weight: 100;
+      }
+    }
   }
 
   &-portfolio {

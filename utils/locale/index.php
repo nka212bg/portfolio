@@ -1,6 +1,7 @@
 <?php
 $availableLangs = ["en", "fr"];
-$selectedLang = $_GET['t'] ?? $_COOKIE['t'] ?? substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) ?? 'en';
+// $selectedLang = $_GET['t'] ?? $_COOKIE['t'] ?? substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) ?? 'en';
+$selectedLang = $_GET['t'] ?? $_COOKIE['t'] ?? 'en';
 
 
 $isLegal = in_array($selectedLang, $availableLangs);
