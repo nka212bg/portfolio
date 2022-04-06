@@ -5,7 +5,7 @@ $t = $i18n["language"];
 ?>
 
 <!DOCTYPE html>
-<html lang="<?= $i18n["selectedLanguage"] ?>">
+<html lang="<?= $i18n["selectedLanguage"] ?>" style='background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("/items/img/bg_<?= rand(1, 10) ?>.jpg");'>
 
 <head>
     <title><?= isset($meta_title) ? $meta_title . " | " . $t['title']  : $t['title'] ?></title>
@@ -24,13 +24,13 @@ $t = $i18n["language"];
     <meta property="og:site_name" content="<?= isset($meta_title) ? $meta_title . " | " . $t['title']  : $t['title'] ?>" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="<?= $meta_description ?? $t['meta_description'] ?>" />
-    <meta property="og:image" content="<?= "$netProtocol://$_SERVER[HTTP_HOST]/" . ($meta_social_img ?? 'img/social_img.jpg') ?>" />
+    <meta property="og:image" content="<?= "$netProtocol://$_SERVER[HTTP_HOST]/" . ($meta_social_img ?? 'items/img/bg_' . rand(1, 10) . '.jpg') ?>" />
     <meta property="og:url" content="<?= "$netProtocol://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>" />
     <meta name="twitter:title" content="<?= isset($meta_title) ? $meta_title . " | " . $t['title']  : $t['title'] ?>" />
     <meta name="twitter:description" content="<?= $meta_description ?? $t['meta_description'] ?>" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@www.<?= "$_SERVER[HTTP_HOST]" ?>" />
-    <meta name="twitter:image" content="<?= "$netProtocol://$_SERVER[HTTP_HOST]/" . ($meta_social_img ?? 'img/social_img.jpg') ?>" />
+    <meta name="twitter:image" content="<?= "$netProtocol://$_SERVER[HTTP_HOST]/" . ($meta_social_img ?? 'items/img/bg_' . rand(1, 10) . '.jpg') ?>" />
 
 
 

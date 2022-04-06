@@ -9,7 +9,7 @@
 }'>
 
     <a v-if="!hideMenuLogo" href="/?t=<?= $i18n["selectedLanguage"] ?>" class="app-header-menu__left">
-        <img src="/img/avatar.png" class="app-header-menu__left__logo" alt="logo" />
+        <img src="/img/logo.svg" class="app-header-menu__left__logo" alt="logo" />
         <h1 class="app-header-menu__left__company-name mobile-hide"><?= $t['myName'] ?></h1>
     </a>
     <div v-else></div>

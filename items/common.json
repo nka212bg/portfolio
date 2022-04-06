@@ -2,6 +2,7 @@
   "tags": {
     "Dev": { "icon": "", "color": "yellow" },
     "Design": { "icon": "", "color": "dodgerblue" },
+    "3D": { "icon": "", "color": "#f5792a" },
     "javascript": { "icon": "", "color": "yellow" },
     "html": { "icon": "", "color": "#f5792a" },
     "css": { "icon": "", "color": "#1572b6" },
@@ -21,6 +22,7 @@
     "php": { "icon": "", "color": "#777bb4" },
     "wordpress": { "icon": "", "color": "#21759b" },
     "python": { "icon": "", "color": "#3776ab" },
-    "github": { "icon": "", "color": "#3776ab" }
+    "github": { "icon": "", "color": "#3776ab" },
+    "solidworks": { "icon": "", "color": "#3776ab" }
   }
 }

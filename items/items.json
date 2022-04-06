@@ -1,43 +1,36 @@
 [
   {
-    "title": "Item title text 1",
-    "description": "Feelings potatoes break cats minute carried newspaper rear.",
-    "img": "/items/img/door2.jpg",
-    "category": "Dev",
-    "tags": ["html", "javascript", "nuxt"]
+    "title": "San Francisco bus shelter",
+    "img": "/items/img/bus_shelter_2.jpg",
+    "category": "3D",
+    "tags": ["blender"]
   },
   {
-    "title": "Item title text 2",
-    "description": "Minute carried newspaper rear feelings potatoes break cats.Minute carried newspaper rear feelings potatoes break cats.Minute carried newspaper rear feelings potatoes break cats.",
-    "img": "/items/img/Capture.PNG",
-    "category": "Design",
-    "tags": ["blender", "xd", "nuxt"]
+    "title": "Fitness equipment",
+    "description": "Biceps and triceps simultaneously.",
+    "img": "/items/img/fitness_4.jpg",
+    "category": "3D",
+    "tags": ["solidworks"]
   },
   {
-    "title": "Item title text 1",
-    "description": "Feelings potatoes break cats minute carried newspaper rear.",
-    "img": "/items/img/door2.jpg",
-    "category": "Dev",
-    "tags": ["html", "javascript", "nuxt"]
+    "title": "Fitness equipment",
+    "description": "Adjustable equipment for all chest and back muscles.",
+    "img": "/items/img/fitness_5.jpg",
+    "category": "3D",
+    "tags": ["solidworks"]
   },
   {
-    "title": "Item title text 2",
-    "description": "Minute carried newspaper rear feelings potatoes break cats.Minute carried newspaper rear feelings potatoes break cats.Minute carried newspaper rear feelings potatoes break cats.",
-    "img": "/items/img/Capture.PNG",
-    "category": "Design",
-    "tags": ["blender", "xd", "nuxt"]
+    "title": "Fitness equipment",
+    "description": "Adjustable equipment for all chest and back muscles.",
+    "img": "/items/img/fitness_3.gif",
+    "category": "3D",
+    "tags": ["solidworks"]
   },
-  {
-    "title": "Item title text 1",
-    "description": "Feelings potatoes break cats minute carried newspaper rear.",
-    "img": "/items/img/door2.jpg",
-    "category": "Dev",
-    "tags": ["html", "javascript", "nuxt"]
-  },
+
   {
     "title": "Item title text 33",
     "description": "Feelings potatoes break cats minute. Feelings potatoes break cats minute carried newspaper rear.<br><a href=\"https://github.com/nka212bg/portfolio\" target=\"_blank\"> Repository</a>",
-    "img": "/items/img/Capture.PNG",
+    "img": "/items/img/fitness_5.jpg",
     "category": "Dev",
     "tags": ["html", "javascript", "nuxt", "github"]
   }

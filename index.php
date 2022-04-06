@@ -25,7 +25,7 @@ require 'components/headerMenu.php';
 }'>
 
     <div class="home-hero">
-        <img src="/img/logo.svg" alt="Nik Atanasov logo">
+        <img src="/img/avatar.png" alt="Nik Atanasov logo">
         <div class="home-hero-text">
             <div class="hero-title" v-html="`<?= $t['title'] ?>`"></div>
             <div class="hero-description" v-html="`<?= $t['description'] ?>`"></div>
@@ -36,7 +36,7 @@ require 'components/headerMenu.php';
     <!-- ITEMS -->
     <div style="position: relative;">
         <div v-if="filterTag" class="flex-center smaller--font-size link text--white" style="position: absolute; top: 0; left: 33px" @click="filterBy(null)"><span :style="{color: common.tags[filterTag].color, fontFamily: 'var(--font-logos)' }" class="small--font-size mr-05">{{common.tags[filterTag].icon}}</span> filtered by {{filterTag}}</div>
-        <div class="home-portfolio p-2">
+        <div class="home-portfolio">
             <div v-for="(item, i) in items" :key="i" v-show="!item.hide" class="portfolio-item">
 
                 <img :src="item.img" class="img" alt="item-image" loading="lazy" @click="selectedItem = item, selectedItemIndex = i, document.querySelector('html').classList.add('hide-scroll')">

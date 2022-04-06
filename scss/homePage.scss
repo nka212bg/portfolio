@@ -8,10 +8,8 @@
     text-align: center;
 
     & img {
-      width: 20vmin;
-      height: 20vmin;
-      min-width: 120px;
-      min-height: 120px;
+      width: clamp(100px, 20vmin, 160px);
+      height: clamp(100px, 20vmin, 160px);
       object-fit: contain;
       margin-bottom: 2rem;
     }
@@ -19,13 +17,15 @@
     & .home-hero-text {
       padding: 0 7%;
       & .hero-title {
-        font-size: 2rem;
+        font-size: clamp(1rem, 7vmin, 2rem);
         font-weight: 100;
         margin-bottom: 0.3rem;
       }
 
       & .hero-description {
         font-weight: 100;
+        font-size: clamp(0.7rem, 3vmin, 1rem);
+        text-shadow: 0px 4px 4px black;
       }
     }
   }
@@ -33,8 +33,13 @@
   &-portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-
+    padding: 2rem;
     gap: 2rem;
+
+    @media only screen and (max-width: 600px) {
+      padding: 5%;
+      grid-template-columns: 1fr;
+    }
   }
 
   &-popup {
