@@ -14,7 +14,7 @@ return [
     "myName" => "Nik Atanasov",
     "title" => "Portfolio Website",
     // "description" => "Made with php and petite-vue. <a href='https://github.com/nka212bg/portfolio' target='_blank' class='text--secondary-8'></a>",
-    "description" => "It's never about what it is, but about how you gonna make it look!",
+    "description" => "It's never about what it is, but how you gonna present it!",
 
     /// meta
     "meta_description" => "Nikolay Krasimirov Atanasov portfolio website",

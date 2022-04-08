@@ -20,16 +20,25 @@
     margin: 6%;
     overflow: hidden;
     background-color: #3e3e3e;
-    box-shadow: 0 0px 0px 4px rgb(255 255 255 / 3%), 0 2px 36px 11px rgb(0 0 0 / 37%);
+    box-shadow: 0 2px 36px 0px rgb(0 0 0 / 40%);
 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 
     &--fullWidth {
+      width: fit-content;
+      height: fit-content;
       max-width: calc(100vw - 10%);
-      height: 100%;
       margin: 0;
+
+      img {
+        object-fit: cover;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        min-height: 500px;
+        max-height: inherit;
+      }
     }
 
     &-content {
@@ -48,8 +57,9 @@
       position: absolute;
       font-size: 1.5rem;
       line-height: 0;
-      // background: var(--primary-3);
       color: white;
+      // background: rgb(0 0 0 / 20%);
+      z-index: 1;
       @include square(30px);
       @include flex-pos();
       padding-bottom: 2px;
@@ -73,9 +83,10 @@
       top: 50%;
       transform: translateY(-50%);
       padding: 0 1.5rem;
+      z-index: 1;
 
       & .nav-arrow {
-        background: rgb(64 64 64 / 72%);
+        background: rgb(0 161 255 / 66%);
         width: 30px;
         height: 30px;
         border-radius: 4px;
