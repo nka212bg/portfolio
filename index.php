@@ -41,7 +41,7 @@ require 'components/headerMenu.php';
 
     <!-- ITEMS -->
     <div class="home-portfolio">
-        <div v-if="filterTag" class="flex-center smaller--font-size link text--white" style="position: absolute; top: 0; left: 33px" @click="filterBy(null)"><span :style="{color: common.tags[filterTag].color, fontFamily: 'var(--font-logos)' }" class="small--font-size mr-05">{{common.tags[filterTag].icon}}</span> filtered by {{filterTag}}</div>
+        <div v-if="filterTag" class="flex-center smaller--font-size link text--white" style="position: absolute; top: 0" @click="filterBy(null)"><span :style="{color: common.tags[filterTag].color, fontFamily: 'var(--font-logos)' }" class="small--font-size mr-05">{{common.tags[filterTag].icon}}</span> filtered by {{filterTag}} <span class="big--font-size ml-025 light">&times;</span></div>
         <div v-for="(item, i) in items" :key="i" v-show="!item.hide" class="portfolio-item">
 
             <img :src="item.img" class="img" alt="item-image" loading="lazy" @click="selectedItem = item, selectedItemIndex = i, document.querySelector('html').classList.add('hide-scroll')">

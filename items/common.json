@@ -19,6 +19,7 @@
     "npm": { "icon": "", "color": "#cb3837" },
     "vue": { "icon": "", "color": "#4fc08d" },
     "nuxt": { "icon": "", "color": "#00c58e" },
+    "node": { "icon": "", "color": "#393" },
     "php": { "icon": "", "color": "#777bb4" },
     "wordpress": { "icon": "", "color": "#21759b" },
     "python": { "icon": "", "color": "#3776ab" },

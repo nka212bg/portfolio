@@ -24,7 +24,7 @@
 
       & .hero-description {
         font-weight: 100;
-        font-size: clamp(0.7rem, 3vmin, 1rem);
+        font-size: clamp(0.85rem, 3vmin, 1rem);
         text-shadow: 0px 4px 4px black;
       }
     }
@@ -38,16 +38,19 @@
     position: relative;
 
     padding: 2rem;
-    -webkit-columns: 5 400px;
-    -moz-columns: 5 400px;
-    columns: 5 400px;
+    -webkit-columns: 400px;
+    -moz-columns: 400px;
+    columns: 400px;
     -webkit-column-gap: 2rem;
     -moz-column-gap: 2rem;
     column-gap: 2rem;
 
     @media only screen and (max-width: 900px) {
       padding: 5%;
-      columns: 1;
+      padding-top: 2rem;
+      -webkit-columns: 300px;
+      -moz-columns: 300px;
+      columns: 300px;
     }
   }
 
@@ -57,11 +60,9 @@
 
     &-content {
       position: absolute;
-      top: 2px;
-      left: 2px;
-      right: 2px;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
+      top: 0px;
+      left: 0px;
+      right: 0px;
       padding: 1rem;
       background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
       display: flex;
@@ -69,6 +70,7 @@
       gap: 1rem;
       padding-right: 60px;
       padding-bottom: 4rem;
+      -webkit-backface-visibility: hidden;
 
       & .item-title {
         color: var(--gray-2);

@@ -38,6 +38,7 @@
         height: -webkit-fill-available;
         min-height: 500px;
         max-height: inherit;
+        -webkit-backface-visibility: hidden;
       }
     }
 

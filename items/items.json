@@ -1,5 +1,12 @@
 [
   {
+    "title": "Order Control",
+    "description": "I made a FREE ERP system that has multiple features for managing your business.<br><br>I see how expensive these products are and I made something absolutely free of charge. Some of the core features are: Tasks management. Storage that counts the items In it according to the current tasks and alarms you if there are out of stock items. Employees management with efficiency statistics and vacations management. Tools and machines inventory and many-many more. There is a mobile app too.<br><br>You are welcome to use it <a href=\"https://ordercontrol.ca\" target=\"_blank\">here </a>",
+    "img": "/items/img/ordercontrol.jpg",
+    "category": "Dev",
+    "tags": ["html", "javascript", "nuxt", "node"]
+  },
+  {
     "title": "Pong game",
     "description": "It is just a small game for time-wasting, you play with the mouse, by moving it up and down on the black screen. The game is available to play <a href=\"https://nka212bg.github.io/pong-game-javascript\" target=\"_blank\">here </a> and the repository is <a href=\"https://github.com/nka212bg/pong-game-javascript\" target=\"_blank\">here </a>",
     "img": "/items/img/pong.jpg",
