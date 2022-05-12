@@ -1,6 +1,7 @@
 /analitics
 /node_modules
 /portfolio_projects*
+/ordermanager*
 
 .env
 .well-known

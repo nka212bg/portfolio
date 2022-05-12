@@ -14,6 +14,7 @@
     </a>
     <div v-else></div>
     <div class="app-header-menu__right">
+        <a href="https://www.linkedin.com/in/nkatanasov" target="_blank" class="app-header-menu__right__social-link big--font-size text--blue"></a>
         <a href="https://github.com/nka212bg" target="_blank" class="app-header-menu__right__social-link big--font-size text--white"></a>
         <a href="https://gitlab.com/nka212bg" target="_blank" class="app-header-menu__right__social-link big--font-size text--alert"></a>
         <div class="app-header-menu__right__social-link bigger--font-size text--secondary-8" @click="showFeedback = true, document.querySelector('html').classList.add('hide-scroll')"></div>
