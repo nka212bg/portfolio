@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CriptoPass</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Author: N.K.A, Montreal QC, Canada" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/global.css" />
+
+        <!-- SCRIPTS -->
+        <!-- https://vuejsexamples.com/petite-vue-6kb-subset-of-vue-optimized-for-progressive-enhancement/  petit vue tutorial -->
+        <script src="./script/petite-vue.js" defer init></script>
+        <script src="./script/pako.min.js"></script>
+        <script src="./script/cripto.js"></script>
+        <script src="./script/main.js"></script>
+    </head>
+
+    <body
+        class="ma-15"
+        v-scope="{
+                    decripted: null, 
+                    decriptError: null, 
+                    password: '',
+                    searchString: '',
+                }"
+        v-cloak
+    >
+        <div class="mb-1">
+            <div class="align-end gap-05">
+                <div v-if="decripted">
+                    <div class="smaller--font-size">Search</div>
+                    <input v-model="searchString" autocomplete="off" />
+                </div>
+
+                <div v-else>
+                    <div class="smaller--font-size">Password</div>
+                    <input
+                        v-model="password"
+                        type="password"
+                        autocomplete="off"
+                        @keydown.enter="decriptPasswords(password).then(({error, data})=> (decriptError = error, decripted = data, password = '' ))"
+                    />
+                </div>
+
+                <div class="align-center justify-between w-max gap-05">
+                    <button v-if="password" @click="decriptPasswords(password).then(({error, data})=> (decriptError = error, decripted = data, password = '' ))">Enter</button>
+                    <div v-else></div>
+                    <div>
+                        <button v-if="decripted" @click="decripted = null">Logout</button>
+                        <button v-else @click="importPasswords(password).then(({error, data})=> (decriptError = error, decripted = data, password = '' ))" :disabled="!password">Import</button>
+
+                        <button v-if="localStorage.rawData" @click="downloadFile(`encripted-${Date.now()}.txt`, localStorage.rawData)" class="ml-025">Export</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table v-if="decripted">
+            <tr>
+                <th v-for="(item, i) in Object.keys(decripted[0])" :key="i">{{item}}</th>
+            </tr>
+            <tr v-for="(item, i) in decripted.filter(e=> Object.values(e).join(' ').toLowerCase().includes(searchString.toLowerCase()))" :key="i">
+                <td
+                    v-for="(item2, i2, i3) in item"
+                    :key="i2"
+                    class="cursor-pointer"
+                    @click="copyToClipboard(item2), $event.target.style.color = 'red', setTimeout(()=>{ $event.target.style.color = null }, 6000)"
+                >
+                    <div class="align-center gap-05 text--ellipsis pointer-none">{{i3 == 0 ? i+1 : ''}} {{ item2 ? '❤️' : '' }} {{ i2?.toLowerCase() == 'password' ? '●●●●●●●●●': item2}}</div>
+                </td>
+            </tr>
+        </table>
+        <div v-else-if="decriptError" style="color: red">{{decriptError}}</div>
+    </body>
+</html>

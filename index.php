@@ -34,6 +34,9 @@ require 'components/headerMenu.php';
         <div class="home-hero-text">
             <div class="hero-title" v-html="`<?= $t['title'] ?>`"></div>
             <div class="hero-description" v-html="`<?= $t['description'] ?>`"></div>
+            <a style="display: none;" href="tel:+1 (514) 701-0690"></a>
+            <a style="display: none;" href="mailto:nka212bg@gmail.com"></a>
+            <a style="display: none;" href="https://www.google.com/maps/place/2250+Boul.+de+Maisonneuve+Ouest,+Montr%C3%A9al,+QC+H3H+1L1/@45.4908935,-73.5860872,18z"></a>
         </div>
     </div>
 
