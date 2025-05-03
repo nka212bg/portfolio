@@ -51,7 +51,7 @@ $t = $i18n["language"];
     <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
 
     <script src="script/main.js"></script>
-    <script src="https://portfolio.metatronprime.com/analitics/analitics.js" defer></script>
+    <script src="https://portfolio.metatronprime.com/analitics/analitics.js" async></script>
 
 </head>
 
