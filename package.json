@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "scss": "sass --watch scss/global.scss css/global.css --style compressed"   
+    "dev": "php -S localhost:3000 & sass --watch scss/global.scss css/global.css --style compressed"
   },
   "dependencies": {
     "sass": "^1.49.7"

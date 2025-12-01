@@ -1,448 +1,633 @@
 [
   {
+    "title": "Morse app",
+    "description": "A lightweight utility for generating morse to text, and text to morse. It has authentication, automatic alphabet detection, and end-to-end encryption for secure communication. The app also includes sound output customization to generate a distinctive radio transmission signature. With a stunning, themeable neomorphic UI, it runs smoothly on any modern browser.<br><br><a href=\"https://portfolio.metatronprime.com/morse\" target=\"_blank\">Test link </a>",
+    "img": "/items/img/morse.jpg",
+    "category": "Dev",
+    "tags": [
+      "html",
+      "javascript",
+      "css"
+    ]
+  },
+  {
+    "title": "ListBinder",
+    "description": "Affiliate marketing platform built with SEO-friendly design for every item. Open to all users, it allows you to create collections and add items with your affiliate product links. Visitors can comment on and rate items.<br><br><a href=\"https://listbinder.com\" target=\"_blank\">Test link </a>",
+    "img": "/items/img/listbinder_app.jpg",
+    "category": "Dev",
+    "tags": [
+      "nuxt",
+      "node"
+    ]
+  },
+  {
+    "title": "Bookmarks cloud web aplication",
+    "description": "Sophisticated cloud-based platform for storing bookmarks and notes. Access your saved content from anywhere, and easily import bookmarks from your browser to the cloud. Enjoy rich metadata previews, automatic categorization, and tagging. A powerful search feature for finding exactly what you need.<br><br><a href=\"https://dev.buukmarks.com\" target=\"_blank\">Test link </a>",
+    "img": "/items/img/bookmarks_app.jpg",
+    "category": "Dev",
+    "tags": [
+      "nuxt",
+      "node"
+    ]
+  },
+  {
     "title": "Order Control",
     "description": "I made a FREE ERP system that has multiple features for managing your business.<br><br>I see how expensive these products are and I made something absolutely free of charge. Some of the core features are: Tasks management. Storage that counts the items In it according to the current tasks and alarms you if there are out of stock items. Employees management with efficiency statistics and vacations management. Tools and machines inventory and many-many more. There is a mobile app too.<br><br>You are welcome to use it <a href=\"https://ordercontrol.ca\" target=\"_blank\">here </a>",
     "img": "/items/img/ordercontrol.jpg",
     "category": "Dev",
-    "tags": ["html", "javascript", "nuxt", "node"]
+    "tags": [
+      "html",
+      "javascript",
+      "nuxt",
+      "node"
+    ]
   },
   {
     "title": "Pong game",
     "description": "It is just a small game for time-wasting, you play with the mouse, by moving it up and down on the black screen. The game is available to play <a href=\"https://nka212bg.github.io/pong-game-javascript\" target=\"_blank\">here </a> and the repository is <a href=\"https://github.com/nka212bg/pong-game-javascript\" target=\"_blank\">here </a>",
     "img": "/items/img/pong.jpg",
     "category": "Dev",
-    "tags": ["html", "javascript", "github"]
+    "tags": [
+      "html",
+      "javascript",
+      "github"
+    ]
   },
   {
     "title": "2048 game",
     "description": "This game I did as a job interview assignment. If you are asking yourself, did I get the job... I didn&apos;t, but now I have this game that I am showing around. The game is available to play <a href=\"https://nka212bg.github.io/2048/demo\" target=\"_blank\">here </a> and the repository is <a href=\"https://github.com/nka212bg/2048\" target=\"_blank\">here </a>",
     "img": "/items/img/2048_tumb.jpg",
     "category": "Dev",
-    "tags": ["vue", "github"]
+    "tags": [
+      "vue",
+      "github"
+    ]
   },
   {
     "title": "Blackjack game",
     "description": "This game was a project assigned to me at school. It stays untouched since then and it is available to play <a href=\"https://nka212bg.github.io/black-jack-Javascript-game\" target=\"_blank\">here </a> and the repository is <a href=\"https://github.com/nka212bg/black-jack-Javascript-game\" target=\"_blank\">here </a>.<br><br>A fun fact is that I didn&apos;t know how to play Blackjack before that, now I am quite good. With a lot of practice, you start seeing the patterns 😂",
     "img": "/items/img/blackjack_tumb.jpg",
     "category": "Dev",
-    "tags": ["html", "javascript", "github"]
+    "tags": [
+      "html",
+      "javascript",
+      "github"
+    ]
   },
   {
     "title": "My Portfolio",
     "description": "It is my personal portfolio, the very same website you are looking at now. You may check the repository <a href=\"https://github.com/nka212bg/portfolio\" target=\"_blank\">here </a>",
     "img": "/items/img/portfolio.jpg",
     "category": "Dev",
-    "tags": ["html", "vue", "github"]
+    "tags": [
+      "html",
+      "vue",
+      "github"
+    ]
   },
   {
     "title": "lorem3.com",
     "description": "Nonsense text generator generates real words assembled as a real text in several languages and alphabets. The website <a href=\"https://lorem3.com\" target=\"_blank\">here </a>",
     "img": "/items/img/lorem3.jpg",
     "category": "Dev",
-    "tags": ["html", "vue"]
+    "tags": [
+      "html",
+      "vue"
+    ]
   },
   {
     "title": "ISR Transit Inc.",
     "description": "Design and WordPress implementation of the <a href=\"https://isrtransit.com\" target=\"_blank\">Buspas </a> website",
     "img": "/items/img/isr_tumb.jpg",
     "category": "Dev",
-    "tags": ["wordpress", "xd"]
+    "tags": [
+      "wordpress",
+      "xd"
+    ]
   },
   {
     "title": "Tangente.io",
     "description": "Design and WordPress implementation of the <a href=\"https://tangente.io\" target=\"_blank\">Tangente.io </a> website",
     "img": "/items/img/tangente_tumb.jpg",
     "category": "Dev",
-    "tags": ["xd", "wordpress"]
+    "tags": [
+      "xd",
+      "wordpress"
+    ]
   },
   {
     "title": "Buspas Inc.",
     "description": "Design and WordPress implementation of the <a href=\"https://buspas.com/en\" target=\"_blank\">Buspas </a> website",
     "img": "/items/img/buspas.jpg",
     "category": "Dev",
-    "tags": ["xd", "wordpress"]
+    "tags": [
+      "xd",
+      "wordpress"
+    ]
   },
-
   {
     "img": "/items/img/bg_1.jpg",
     "category": "3D",
     "title": "Bus shelter",
     "description": "Digital real-time sign for bus shelters, a project for <a href=\"https://isrtransit.com/\" target=\"_blank\">ISR Transit </a>",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_2.jpg",
     "description": "Tranzito is going to Florida",
     "category": "3D",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
-
   {
     "img": "/items/img/bg_3.jpg",
     "title": "Bus shelter",
     "description": "Digital real-time sign for bus shelters, a project for <a href=\"https://isrtransit.com/\" target=\"_blank\">ISR Transit </a>",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_4.jpg",
     "title": "Bus shelter",
     "description": "Digital real-time sign for bus shelters, a project for <a href=\"https://isrtransit.com/\" target=\"_blank\">ISR Transit </a>",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_5.jpg",
     "title": "Bus shelter",
     "description": "Digital real-time sign for bus shelters, a project for <a href=\"https://isrtransit.com/\" target=\"_blank\">ISR Transit </a>",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_6.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_7.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_8.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
-
   {
     "img": "/items/img/bg_9.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_10.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_11.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_12.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_13.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_14.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_15.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
-
   {
     "img": "/items/img/bg_16.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bg_17.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/box1.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bus_shelter_1.jpg",
     "category": "3D",
     "title": "Bus shelter",
     "description": "San Francisco bus shelter info displays, a project for <a href=\"https://isrtransit.com/\" target=\"_blank\">ISR Transit </a>",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/bus_shelter_2.jpg",
     "category": "3D",
     "title": "Bus shelter",
     "description": "San Francisco bus shelter info displays, a project for <a href=\"https://isrtransit.com/\" target=\"_blank\">ISR Transit </a>",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/chair.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
-
   {
     "img": "/items/img/chair2.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/food_app.jpg",
     "category": "Design",
     "description": "Food app",
-    "tags": ["photoshop"]
+    "tags": [
+      "photoshop"
+    ]
   },
   {
     "img": "/items/img/chess_app.jpg",
     "category": "3D",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
-
   {
     "img": "/items/img/doomCrate-2.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/playRoom2.jpg",
     "category": "Design",
     "description": "Mobile game design, Playroom",
-    "tags": ["blender", "photoshop"]
+    "tags": [
+      "blender",
+      "photoshop"
+    ]
   },
   {
     "img": "/items/img/FinalReward2.jpg",
     "category": "Design",
     "description": "Mobile game design, Final reward screen",
-    "tags": ["blender", "photoshop"]
+    "tags": [
+      "blender",
+      "photoshop"
+    ]
   },
-
   {
     "img": "/items/img/fitness_1.gif",
     "category": "3D",
     "title": "Fitness equipment",
     "description": "A concept for fitness equipment with an electromagnetic load. Changeable angle and both ways load for developing multiple body parts simultaneously",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
   {
     "img": "/items/img/fitness_2.gif",
     "category": "3D",
     "title": "Fitness equipment",
     "description": "A concept for fitness equipment with an electromagnetic load. Changeable angle and both ways load for developing multiple body parts simultaneously",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
   {
     "img": "/items/img/fitness_3.gif",
     "category": "3D",
     "title": "Fitness equipment",
     "description": "A concept for fitness equipment with an electromagnetic load. Changeable angle and both ways load for developing multiple body parts simultaneously",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
   {
     "img": "/items/img/fitness_4.jpg",
     "category": "3D",
     "title": "Fitness equipment",
     "description": "A concept for fitness equipment with an electromagnetic load. Changeable angle and both ways load for developing multiple body parts simultaneously",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
   {
     "img": "/items/img/fitness_5.jpg",
     "category": "3D",
     "title": "Fitness equipment",
     "description": "A concept for fitness equipment with an electromagnetic load. Changeable angle and both ways load for developing multiple body parts simultaneously",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
-
   {
     "img": "/items/img/iphone22.jpg",
     "category": "Design",
     "title": "Mobile app",
     "description": "Design for the <a href=\"https://buspas.com/\" target=\"_blank\">Buspas </a> mobile app",
-    "tags": ["illustrator"]
+    "tags": [
+      "illustrator"
+    ]
   },
   {
     "img": "/items/img/isr_catalog-1.jpg",
     "category": "Design",
-    "tags": ["photoshop"]
+    "tags": [
+      "photoshop"
+    ]
   },
   {
     "img": "/items/img/mobic1.jpg",
     "category": "Design",
-    "tags": ["photoshop"]
+    "tags": [
+      "photoshop"
+    ]
   },
-
   {
     "img": "/items/img/mobile_5.jpg",
     "category": "Design",
-    "tags": ["illustrator"]
+    "tags": [
+      "illustrator"
+    ]
   },
   {
     "img": "/items/img/mobile_8.jpg",
     "category": "Design",
-    "tags": ["illustrator"]
+    "tags": [
+      "illustrator"
+    ]
   },
-
   {
     "img": "/items/img/montreal_bus_shelter_1.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/montreal_bus_shelter_2.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
-
   {
     "img": "/items/img/new5.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
-
   {
     "img": "/items/img/phone4.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/phone5.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
-
   {
     "img": "/items/img/q1-1.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/q1-3.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/q1-4.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
-
   {
     "img": "/items/img/render_13.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/render_helmet-2.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/riffle_1.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/riffle_2.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
-
   {
     "img": "/items/img/school3d_1.jpg",
     "category": "3D",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
   {
     "img": "/items/img/school3d_7.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/school3d_11.jpg",
     "category": "3D",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
   {
     "img": "/items/img/school3d_12.jpg",
     "category": "3D",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
   {
     "img": "/items/img/school3d_13.jpg",
     "category": "3D",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
   {
     "img": "/items/img/school3d_14.jpg",
     "category": "3D",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
   {
     "img": "/items/img/school3d_15.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/school3d_16.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/school3d_18.jpg",
     "category": "3D",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
   {
     "img": "/items/img/school3d_19.jpg",
     "category": "3D",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
   {
     "img": "/items/img/sdfg456456.jpg",
     "category": "3D",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
-
   {
     "img": "/items/img/sdfgsdf.jpg",
     "category": "3D",
-    "tags": ["solidworks"]
+    "tags": [
+      "solidworks"
+    ]
   },
   {
     "img": "/items/img/stm1.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/stm2.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   },
   {
     "img": "/items/img/tangente.jpg",
     "category": "Design",
-    "tags": ["photoshop"]
+    "tags": [
+      "photoshop"
+    ]
   },
   {
     "img": "/items/img/tangenteBack.jpg",
     "category": "Design",
     "title": "Triplet brochures",
     "description": "brochures about <a href=\"https://tangente.io\" target=\"_blank\">Tangente&apos;s </a> mobile app",
-    "tags": ["photoshop", "illustrator"]
+    "tags": [
+      "photoshop",
+      "illustrator"
+    ]
   },
   {
     "img": "/items/img/tangenteFront.jpg",
     "category": "Design",
     "title": "Triplet brochures",
     "description": "brochures about <a href=\"https://tangente.io\" target=\"_blank\">Tangente&apos;s </a> mobile app",
-    "tags": ["photoshop", "illustrator"]
+    "tags": [
+      "photoshop",
+      "illustrator"
+    ]
   },
   {
     "img": "/items/img/tire1.jpg",
     "category": "3D",
-    "tags": ["blender"]
+    "tags": [
+      "blender"
+    ]
   }
 ]
