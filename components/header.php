@@ -53,6 +53,58 @@ $t = $i18n["language"];
     <script src="script/main.js"></script>
     <script src="https://portfolio.metatronprime.com/analitics/analitics.js" async></script>
 
+    <!-- Schema.org JSON-LD markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [{
+                    "@type": "Person",
+                    "@id": "https://portfolio.metatronprime.com/#person",
+                    "name": "Nik Atanasov",
+                    "url": "https://portfolio.metatronprime.com/",
+                    "image": "https://portfolio.metatronprime.com/items/img/morse.jpg",
+                    "jobTitle": "Developer, UI/UX/3D",
+                    "sameAs": [
+                        "https://www.linkedin.com/in/metatronprime/",
+                        "https://github.com/nka212bg",
+                        "https://gitlab.com/nka212bg"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://portfolio.metatronprime.com/#website",
+                    "url": "https://portfolio.metatronprime.com/",
+                    "name": "Nik Atanasov Portfolio",
+                    "publisher": {
+                        "@id": "https://portfolio.metatronprime.com/#person"
+                    }
+                },
+                {
+                    "@type": "ItemList",
+                    "@id": "https://portfolio.metatronprime.com/#projects",
+                    "name": "Featured Projects",
+                    "itemListElement": [{
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "@type": "CreativeWork",
+                            "name": "Morse Code App",
+                            "url": "https://portfolio.metatronprime.com/morse",
+                            "image": {
+                                "@type": "ImageObject",
+                                "url": "https://portfolio.metatronprime.com/items/img/morse.jpg",
+                                "width": 1600,
+                                "height": 900,
+                                "caption": "Morse Code App interface"
+                            },
+                            "description": "A helper app for converting Morse code to text and vice versa."
+                        }
+                    }]
+                }
+            ]
+        }
+    </script>
+
 </head>
 
 <body>
