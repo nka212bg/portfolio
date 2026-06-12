@@ -1,5 +1,29 @@
 [
   {
+    "title": "Euro Service",
+    "description": "Euroservice.ca is a service website for a Montreal appliance repair company, presenting their installation, diagnostics, and maintenance services along with the brands they specialize in.<br><br><a href=\"https://euroservice.ca/en\" target=\"_blank\">Test link </a>",
+    "img": "/items/img/euroservice.jpg",
+    "category": "Dev",
+    "tags": [
+      "html",
+      "javascript",
+      "css",
+      "php"
+    ]
+  },
+  {
+    "title": "Interlan",
+    "description": "Interlan - A regional fiber‑optic internet provider offering fast GPON connections. It lists several home internet plans and additional services like CCTV installation. The site also highlights its coverage area and contact options.<br><br><a href=\"https://interlan.bg/en\" target=\"_blank\">Test link </a>",
+    "img": "/items/img/interlan-bg.jpg",
+    "category": "Dev",
+    "tags": [
+      "php",
+      "html",
+      "javascript",
+      "css"
+    ]
+  },
+  {
     "title": "Morse app",
     "description": "A lightweight utility for generating morse to text, and text to morse. It has authentication, automatic alphabet detection, and end-to-end encryption for secure communication. The app also includes sound output customization to generate a distinctive radio transmission signature. With a stunning, themeable neomorphic UI, it runs smoothly on any modern browser.<br><br><a href=\"https://portfolio.metatronprime.com/morse\" target=\"_blank\">Test link </a>",
     "img": "/items/img/morse.jpg",
@@ -43,8 +67,20 @@
     ]
   },
   {
+    "title": "Inna&apos;s Journals",
+    "description": "InnasJournals.com is an online shop offering planners, notebooks, and journals designed to help people organize their lives, track goals, and build positive habits.<br><br><a href=\"https://innasjournals.com\" target=\"_blank\">Test link </a>",
+    "img": "/items/img/innasJournals.jpg",
+    "category": "Dev",
+    "tags": [
+      "html",
+      "javascript",
+      "css",
+      "vue"
+    ]
+  },
+  {
     "title": "Pong game",
-    "description": "It is just a small game for time-wasting, you play with the mouse, by moving it up and down on the black screen. The game is available to play <a href=\"https://nka212bg.github.io/pong-game-javascript\" target=\"_blank\">here </a> and the repository is <a href=\"https://github.com/nka212bg/pong-game-javascript\" target=\"_blank\">here </a>",
+    "description": "It is just a small game for time-wasting, you play with the mouse, by moving it up and down on the black screen. <br><br><a href=\"https://nka212bg.github.io/pong-game-javascript\" target=\"_blank\">play </a><br><a href=\"https://github.com/nka212bg/pong-game-javascript\" target=\"_blank\">git </a>",
     "img": "/items/img/pong.jpg",
     "category": "Dev",
     "tags": [
@@ -55,7 +91,7 @@
   },
   {
     "title": "2048 game",
-    "description": "This game I did as a job interview assignment. If you are asking yourself, did I get the job... I didn&apos;t, but now I have this game that I am showing around. The game is available to play <a href=\"https://nka212bg.github.io/2048/demo\" target=\"_blank\">here </a> and the repository is <a href=\"https://github.com/nka212bg/2048\" target=\"_blank\">here </a>",
+    "description": "This game I did as a job interview assignment. If you are asking yourself, did I get the job... I didn&apos;t, but now I have this game that I am showing around. <br><br><a href=\"https://nka212bg.github.io/2048/demo\" target=\"_blank\">play </a><br><a href=\"https://github.com/nka212bg/2048\" target=\"_blank\">git </a>",
     "img": "/items/img/2048_tumb.jpg",
     "category": "Dev",
     "tags": [
@@ -65,23 +101,12 @@
   },
   {
     "title": "Blackjack game",
-    "description": "This game was a project assigned to me at school. It stays untouched since then and it is available to play <a href=\"https://nka212bg.github.io/black-jack-Javascript-game\" target=\"_blank\">here </a> and the repository is <a href=\"https://github.com/nka212bg/black-jack-Javascript-game\" target=\"_blank\">here </a>.<br><br>A fun fact is that I didn&apos;t know how to play Blackjack before that, now I am quite good. With a lot of practice, you start seeing the patterns 😂",
+    "description": "This game was a project assigned to me at school. It stays untouched since then <br><br><a href=\"https://nka212bg.github.io/black-jack-Javascript-game\" target=\"_blank\">play </a><br><a href=\"https://github.com/nka212bg/black-jack-Javascript-game\" target=\"_blank\">git </a><br><br>A fun fact is that I didn&apos;t know how to play Blackjack before that, now I am quite good. With a lot of practice, you start seeing the patterns 😂",
     "img": "/items/img/blackjack_tumb.jpg",
     "category": "Dev",
     "tags": [
       "html",
       "javascript",
-      "github"
-    ]
-  },
-  {
-    "title": "My Portfolio",
-    "description": "It is my personal portfolio, the very same website you are looking at now. You may check the repository <a href=\"https://github.com/nka212bg/portfolio\" target=\"_blank\">here </a>",
-    "img": "/items/img/portfolio.jpg",
-    "category": "Dev",
-    "tags": [
-      "html",
-      "vue",
       "github"
     ]
   },
@@ -97,7 +122,7 @@
   },
   {
     "title": "ISR Transit Inc.",
-    "description": "Design and WordPress implementation of the <a href=\"https://isrtransit.com\" target=\"_blank\">Buspas </a> website",
+    "description": "Design and WordPress implementation of the <a href=\"https://isrtransit.com\" target=\"_blank\">ISR Transit </a> website",
     "img": "/items/img/isr_tumb.jpg",
     "category": "Dev",
     "tags": [
