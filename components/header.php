@@ -25,6 +25,7 @@ foreach (json_decode(file_get_contents(__DIR__ . '/../items/items.json'), true) 
             "url" => $link[1] ?? null,
             "image" => $siteUrl . $item['img'],
             "description" => trim(preg_replace('/\s+/', ' ', html_entity_decode(strip_tags(preg_replace('/<a .*?<\/a>|<br\s*\/?>/', ' ', $item['description'] ?? '')), ENT_QUOTES | ENT_HTML5))),
+            "creator" => ["@id" => "$siteUrl/#person"],
         ]),
     ]);
 }
@@ -32,12 +33,23 @@ $jsonLd = [
     "@context" => "https://schema.org",
     "@graph" => [
         [
+            "@type" => "ProfilePage",
+            "@id" => "$canonical#page",
+            "url" => $canonical,
+            "name" => $pageTitle,
+            "inLanguage" => $i18n["selectedLanguage"],
+            "isPartOf" => ["@id" => "$siteUrl/#website"],
+            "mainEntity" => ["@id" => "$siteUrl/#person"],
+            "hasPart" => ["@id" => "$siteUrl/#projects"],
+        ],
+        [
             "@type" => "Person",
             "@id" => "$siteUrl/#person",
             "name" => "Nik Atanasov",
             "url" => "$siteUrl/",
             "image" => "$siteUrl/img/avatar.png",
             "jobTitle" => "Full-stack Developer",
+            "description" => $t['meta_description'],
             "email" => "mailto:nka212bg@gmail.com",
             "address" => ["@type" => "PostalAddress", "addressLocality" => "Montreal", "addressRegion" => "QC", "addressCountry" => "CA"],
             "knowsAbout" => ["JavaScript", "Vue.js", "Node.js", "Electron", "Capacitor", "PHP", "Java", "SQL", "UI/UX design", "Graphic design", "3D modeling"],

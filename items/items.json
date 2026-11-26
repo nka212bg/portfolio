@@ -1,7 +1,19 @@
 [
   {
+    "title": "OceanChat",
+    "description": "OceanChat is a lightweight (~5 KB) live chat widget for websites: real people, no bots. Visitors log in with email, so conversations don&apos;t disappear, and one widget works across unlimited websites, with every chat labeled by its source site. It includes offline email alerts, desktop and phone notifications, voice typing, video calls with screen sharing, and custom themes and languages. It installs with one line of code on any site, including WordPress, Shopify and Wix.<br><br>You can try it right here, it&apos;s the chat on this page 😉<br><br><a href=\"https://chat.oceandiv.com\" target=\"_blank\">Visit site </a>",
+    "img": "/items/img/oceanchat.jpg",
+    "category": "Dev",
+    "tags": [
+      "node",
+      "html",
+      "javascript",
+      "css"
+    ]
+  },
+  {
     "title": "Euro Service",
-    "description": "Euroservice.ca is a service website for a Montreal appliance repair company, presenting their installation, diagnostics, and maintenance services along with the brands they specialize in.<br><br><a href=\"https://euroservice.ca/en\" target=\"_blank\">Test link </a>",
+    "description": "Euroservice.ca is a service website for a Montreal appliance repair company, presenting their installation, diagnostics, and maintenance services along with the brands they specialize in.<br><br><a href=\"https://euroservice.ca/en\" target=\"_blank\">Visit site </a>",
     "img": "/items/img/euroservice.jpg",
     "category": "Dev",
     "tags": [
@@ -13,7 +25,7 @@
   },
   {
     "title": "Interlan",
-    "description": "Interlan - A regional fiber‑optic internet provider offering fast GPON connections. It lists several home internet plans and additional services like CCTV installation. The site also highlights its coverage area and contact options.<br><br><a href=\"https://interlan.bg/en\" target=\"_blank\">Test link </a>",
+    "description": "Interlan is a regional fiber‑optic internet provider offering fast GPON connections. It lists several home internet plans and additional services like CCTV installation. The site also highlights its coverage area and contact options.<br><br><a href=\"https://interlan.bg/en\" target=\"_blank\">Visit site </a>",
     "img": "/items/img/interlan-bg.jpg",
     "category": "Dev",
     "tags": [
@@ -25,7 +37,7 @@
   },
   {
     "title": "Morse app",
-    "description": "A lightweight utility for generating morse to text, and text to morse. It has authentication, automatic alphabet detection, and end-to-end encryption for secure communication. The app also includes sound output customization to generate a distinctive radio transmission signature. With a stunning, themeable neomorphic UI, it runs smoothly on any modern browser.<br><br><a href=\"https://portfolio.metatronprime.com/morse\" target=\"_blank\">Test link </a>",
+    "description": "A lightweight utility for converting Morse code to text and text to Morse code. It has authentication, automatic alphabet detection, and end-to-end encryption for secure communication. The app also includes sound output customization to generate a distinctive radio transmission signature. With a clean, themeable neumorphic UI, it runs smoothly on any modern browser.<br><br><a href=\"https://portfolio.metatronprime.com/morse\" target=\"_blank\">Visit site </a>",
     "img": "/items/img/morse.jpg",
     "category": "Dev",
     "tags": [
@@ -36,7 +48,7 @@
   },
   {
     "title": "ListBinder",
-    "description": "Affiliate marketing platform built with SEO-friendly design for every item. Open to all users, it allows you to create collections and add items with your affiliate product links. Visitors can comment on and rate items.<br><br><a href=\"https://listbinder.com\" target=\"_blank\">Test link </a>",
+    "description": "Affiliate marketing platform with an SEO-friendly page for every item. Open to all users, it allows you to create collections and add items with your affiliate product links. Visitors can comment on and rate items.<br><br><a href=\"https://listbinder.com\" target=\"_blank\">Visit site </a>",
     "img": "/items/img/listbinder_app.jpg",
     "category": "Dev",
     "tags": [
@@ -45,8 +57,8 @@
     ]
   },
   {
-    "title": "Bookmarks cloud web aplication",
-    "description": "Sophisticated cloud-based platform for storing bookmarks and notes. Access your saved content from anywhere, and easily import bookmarks from your browser to the cloud. Enjoy rich metadata previews, automatic categorization, and tagging. A powerful search feature for finding exactly what you need.<br><br><a href=\"https://dev.buukmarks.com\" target=\"_blank\">Test link </a>",
+    "title": "Buukmarks",
+    "description": "Sophisticated cloud-based platform for storing bookmarks and notes. Access your saved content from anywhere, and easily import bookmarks from your browser to the cloud. Enjoy rich metadata previews, automatic categorization, and tagging. A powerful search helps you find exactly what you need.<br><br><a href=\"https://dev.buukmarks.com\" target=\"_blank\">Visit site </a>",
     "img": "/items/img/bookmarks_app.jpg",
     "category": "Dev",
     "tags": [
@@ -56,7 +68,7 @@
   },
   {
     "title": "Order Control",
-    "description": "I made a FREE ERP system that has multiple features for managing your business.<br><br>I see how expensive these products are and I made something absolutely free of charge. Some of the core features are: Tasks management. Storage that counts the items In it according to the current tasks and alarms you if there are out of stock items. Employees management with efficiency statistics and vacations management. Tools and machines inventory and many-many more. There is a mobile app too.<br><br>You are welcome to use it <a href=\"https://ordercontrol.ca\" target=\"_blank\">here </a>",
+    "description": "I made a free ERP system that has multiple features for managing your business.<br><br>I saw how expensive these products are, so I made something absolutely free of charge. Core features include task management, storage that counts the items in it according to the current tasks and alerts you when items are out of stock, employee management with efficiency statistics and vacations, tool and machine inventory, and much more. There is a mobile app too.<br><br>You are welcome to use it <a href=\"https://ordercontrol.ca\" target=\"_blank\">here </a>",
     "img": "/items/img/ordercontrol.jpg",
     "category": "Dev",
     "tags": [
@@ -68,7 +80,7 @@
   },
   {
     "title": "Inna&apos;s Journals",
-    "description": "InnasJournals.com is an online shop offering planners, notebooks, and journals designed to help people organize their lives, track goals, and build positive habits.<br><br><a href=\"https://innasjournals.com\" target=\"_blank\">Test link </a>",
+    "description": "InnasJournals.com is an online shop offering planners, notebooks, and journals designed to help people organize their lives, track goals, and build positive habits.<br><br><a href=\"https://innasjournals.com\" target=\"_blank\">Visit site </a>",
     "img": "/items/img/innasJournals.jpg",
     "category": "Dev",
     "tags": [
@@ -80,7 +92,7 @@
   },
   {
     "title": "Pong game",
-    "description": "It is just a small game for time-wasting, you play with the mouse, by moving it up and down on the black screen. <br><br><a href=\"https://nka212bg.github.io/pong-game-javascript\" target=\"_blank\">play </a><br><a href=\"https://github.com/nka212bg/pong-game-javascript\" target=\"_blank\">git </a>",
+    "description": "It&apos;s just a small time-waster game: you play with the mouse by moving it up and down on the black screen. <br><br><a href=\"https://nka212bg.github.io/pong-game-javascript\" target=\"_blank\">play </a><br><a href=\"https://github.com/nka212bg/pong-game-javascript\" target=\"_blank\">git </a>",
     "img": "/items/img/pong.jpg",
     "category": "Dev",
     "tags": [
@@ -91,7 +103,7 @@
   },
   {
     "title": "2048 game",
-    "description": "This game I did as a job interview assignment. If you are asking yourself, did I get the job... I didn&apos;t, but now I have this game that I am showing around. <br><br><a href=\"https://nka212bg.github.io/2048/demo\" target=\"_blank\">play </a><br><a href=\"https://github.com/nka212bg/2048\" target=\"_blank\">git </a>",
+    "description": "I made this game as a job interview assignment. If you are asking yourself, did I get the job... I didn&apos;t, but now I have this game that I am showing around. <br><br><a href=\"https://nka212bg.github.io/2048/demo\" target=\"_blank\">play </a><br><a href=\"https://github.com/nka212bg/2048\" target=\"_blank\">git </a>",
     "img": "/items/img/2048_tumb.jpg",
     "category": "Dev",
     "tags": [
@@ -101,7 +113,7 @@
   },
   {
     "title": "Blackjack game",
-    "description": "This game was a project assigned to me at school. It stays untouched since then <br><br><a href=\"https://nka212bg.github.io/black-jack-Javascript-game\" target=\"_blank\">play </a><br><a href=\"https://github.com/nka212bg/black-jack-Javascript-game\" target=\"_blank\">git </a><br><br>A fun fact is that I didn&apos;t know how to play Blackjack before that, now I am quite good. With a lot of practice, you start seeing the patterns 😂",
+    "description": "This game was a project assigned to me at school. It has stayed untouched since then.<br><br><a href=\"https://nka212bg.github.io/black-jack-Javascript-game\" target=\"_blank\">play </a><br><a href=\"https://github.com/nka212bg/black-jack-Javascript-game\" target=\"_blank\">git </a><br><br>A fun fact is that I didn&apos;t know how to play Blackjack before that, now I am quite good. With a lot of practice, you start seeing the patterns 😂",
     "img": "/items/img/blackjack_tumb.jpg",
     "category": "Dev",
     "tags": [
@@ -112,7 +124,7 @@
   },
   {
     "title": "lorem3.com",
-    "description": "Nonsense text generator generates real words assembled as a real text in several languages and alphabets. The website <a href=\"https://lorem3.com\" target=\"_blank\">here </a>",
+    "description": "A nonsense text generator that assembles real words into realistic text in several languages and alphabets. The website is <a href=\"https://lorem3.com\" target=\"_blank\">here </a>",
     "img": "/items/img/lorem3.jpg",
     "category": "Dev",
     "tags": [
@@ -361,7 +373,7 @@
     "img": "/items/img/fitness_1.gif",
     "category": "3D",
     "title": "Fitness equipment",
-    "description": "A concept for fitness equipment with an electromagnetic load. Changeable angle and both ways load for developing multiple body parts simultaneously",
+    "description": "A concept for fitness equipment with an electromagnetic load. Adjustable angle and two-way load for training multiple body parts simultaneously.",
     "tags": [
       "solidworks"
     ]
@@ -370,7 +382,7 @@
     "img": "/items/img/fitness_2.gif",
     "category": "3D",
     "title": "Fitness equipment",
-    "description": "A concept for fitness equipment with an electromagnetic load. Changeable angle and both ways load for developing multiple body parts simultaneously",
+    "description": "A concept for fitness equipment with an electromagnetic load. Adjustable angle and two-way load for training multiple body parts simultaneously.",
     "tags": [
       "solidworks"
     ]
@@ -379,7 +391,7 @@
     "img": "/items/img/fitness_3.gif",
     "category": "3D",
     "title": "Fitness equipment",
-    "description": "A concept for fitness equipment with an electromagnetic load. Changeable angle and both ways load for developing multiple body parts simultaneously",
+    "description": "A concept for fitness equipment with an electromagnetic load. Adjustable angle and two-way load for training multiple body parts simultaneously.",
     "tags": [
       "solidworks"
     ]
@@ -388,7 +400,7 @@
     "img": "/items/img/fitness_4.jpg",
     "category": "3D",
     "title": "Fitness equipment",
-    "description": "A concept for fitness equipment with an electromagnetic load. Changeable angle and both ways load for developing multiple body parts simultaneously",
+    "description": "A concept for fitness equipment with an electromagnetic load. Adjustable angle and two-way load for training multiple body parts simultaneously.",
     "tags": [
       "solidworks"
     ]
@@ -397,7 +409,7 @@
     "img": "/items/img/fitness_5.jpg",
     "category": "3D",
     "title": "Fitness equipment",
-    "description": "A concept for fitness equipment with an electromagnetic load. Changeable angle and both ways load for developing multiple body parts simultaneously",
+    "description": "A concept for fitness equipment with an electromagnetic load. Adjustable angle and two-way load for training multiple body parts simultaneously.",
     "tags": [
       "solidworks"
     ]
@@ -405,7 +417,7 @@
   {
     "img": "/items/img/iphone22.jpg",
     "category": "Design",
-    "title": "Mobile app",
+    "title": "Buspas mobile app",
     "description": "Design for the <a href=\"https://buspas.com/\" target=\"_blank\">Buspas </a> mobile app",
     "tags": [
       "illustrator"
@@ -631,8 +643,8 @@
   {
     "img": "/items/img/tangenteBack.jpg",
     "category": "Design",
-    "title": "Triplet brochures",
-    "description": "brochures about <a href=\"https://tangente.io\" target=\"_blank\">Tangente&apos;s </a> mobile app",
+    "title": "Trifold brochures",
+    "description": "Brochures about <a href=\"https://tangente.io\" target=\"_blank\">Tangente&apos;s </a> mobile app",
     "tags": [
       "photoshop",
       "illustrator"
@@ -641,8 +653,8 @@
   {
     "img": "/items/img/tangenteFront.jpg",
     "category": "Design",
-    "title": "Triplet brochures",
-    "description": "brochures about <a href=\"https://tangente.io\" target=\"_blank\">Tangente&apos;s </a> mobile app",
+    "title": "Trifold brochures",
+    "description": "Brochures about <a href=\"https://tangente.io\" target=\"_blank\">Tangente&apos;s </a> mobile app",
     "tags": [
       "photoshop",
       "illustrator"
