@@ -7,11 +7,11 @@ if ("serviceWorker" in navigator) {
 
 // JS
 const $n = {
-    async feedback(email, text) {
-        await fetch(`model/userRequest?feedback`, { method: "POST", body: JSON.stringify({ text, email }) }).then(e => e.text()).then(e => {
-            console.log("feedback responce -> ", e);
-            return e;
-        })
+    // resolves to 'success' or an error message
+    feedback(email, text, website) {
+        return fetch(`model/userRequest?feedback`, { method: "POST", body: JSON.stringify({ text, email, website }) })
+            .then(e => e.text())
+            .catch(e => `${e}`)
     },
 
 }

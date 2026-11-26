@@ -10,15 +10,16 @@
 
     <a v-if="!hideMenuLogo" href="/?t=<?= $i18n["selectedLanguage"] ?>" class="app-header-menu__left">
         <img src="/img/logo.svg" class="app-header-menu__left__logo" alt="logo" />
-        <h1 class="app-header-menu__left__company-name mobile-hide"><?= $t['myName'] ?></h1>
+        <span class="app-header-menu__left__company-name mobile-hide"><?= $t['myName'] ?></span>
     </a>
     <div v-else></div>
     <div class="app-header-menu__right">
         <a href="https://www.linkedin.com/in/metatronprime/" target="_blank" class="app-header-menu__right__social-link big--font-size text--blue"></a>
         <a href="https://github.com/nka212bg" target="_blank" class="app-header-menu__right__social-link big--font-size text--white"></a>
         <a href="https://gitlab.com/nka212bg" target="_blank" class="app-header-menu__right__social-link big--font-size text--alert"></a>
+        <a href="/CV_Nikolay_Atanasov.pdf" target="_blank" class="app-header-menu__right__social-link text--white" title="CV">CV</a>
         <div class="app-header-menu__right__social-link bigger--font-size text--secondary-8" @click="showFeedback = true, document.querySelector('html').classList.add('hide-scroll')"></div>
-        <div class="app-header-menu__right__lang-switch" :class="{'active': langMenuState}" @click="langMenuState = !langMenuState">
+        <div v-if="langs.length > 1" class="app-header-menu__right__lang-switch" :class="{'active': langMenuState}" @click="langMenuState = !langMenuState">
             <div class="switch-item">{{selectedLang}}</div>
             <div v-show="langMenuState">
                 <div v-for="(lang, i) in langs" :key="i">

@@ -31,13 +31,16 @@ function sendEmail($from, $subject, $text = null)
             $mail->Password = $_ENV["password"];
 
             // Sender and recipient settings
-            $mail->SetFrom($from, $to);
+            // send as yourself (Gmail rejects/rewrites a foreign From), replies go to the visitor
+            $mail->setFrom($to, 'Portfolio');
+            $mail->addReplyTo($from);
             $mail->addAddress($to);
 
             // Setting the email content
             $mail->IsHTML(true);
             $mail->Subject = $subject;
-            $mail->Body = "<h1>" . $subject . "</h1><br/>" .  "<h3>from email: " . $from . "</h3><br/>" .  "<p>" . $text . "</p>";
+            $esc = fn($s) => htmlspecialchars($s ?? '', ENT_QUOTES, 'UTF-8');
+            $mail->Body = "<h1>" . $esc($subject) . "</h1><br/>" .  "<h3>from email: " . $esc($from) . "</h3><br/>" .  "<p>" . nl2br($esc($text)) . "</p>";
 
             $mail->send();
             $status = 'success';

@@ -13,7 +13,11 @@ RewriteRule ^(.*?)/?$ $1.php [NC,L]
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript application/json
 
 # caching
-<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|svg|html|htm|xml|txt|xsl|ttf|css|js)$">
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|svg|ttf)$">
     Header set Cache-Control "max-age=31536050"
+</FilesMatch>
+# files I edit often: browser re-checks each time (304 if unchanged)
+<FilesMatch "\.(pdf|html|htm|xml|txt|xsl|css|js)$">
+    Header set Cache-Control "no-cache"
 </FilesMatch>
 

@@ -1,5 +1,5 @@
 <?php
-$availableLangs = ["en", "fr"];
+$availableLangs = ["en", "fr"]; // add "fr" back once langs/fr.php is translated
 // $selectedLang = $_GET['t'] ?? $_COOKIE['t'] ?? substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) ?? 'en';
 $selectedLang = $_GET['t'] ?? $_COOKIE['t'] ?? 'en';
 

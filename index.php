@@ -21,9 +21,6 @@ require 'components/headerMenu.php';
         this.selectedItemIndex >= this.items.length && (this.selectedItemIndex = 0);
         this.selectedItemIndex < 0 && (this.selectedItemIndex = this.items.length - 1);
         this.selectedItem = this.items[this.selectedItemIndex];
-    },
-    msr(){
-        $n.masonry()
     }
 }'>
 
@@ -32,11 +29,8 @@ require 'components/headerMenu.php';
     <div class="home-hero">
         <img src="/img/avatar.png" alt="Nik Atanasov logo">
         <div class="home-hero-text">
-            <div class="hero-title" v-html="`<?= $t['title'] ?>`"></div>
-            <div class="hero-description" v-html="`<?= $t['description'] ?>`"></div>
-            <a style="display: none;" href="tel:+1 (514) 701-0690"></a>
-            <a style="display: none;" href="mailto:nka212bg@gmail.com"></a>
-            <a style="display: none;" href="https://www.google.com/maps/place/2250+Boul.+de+Maisonneuve+Ouest,+Montr%C3%A9al,+QC+H3H+1L1/@45.4908935,-73.5860872,18z"></a>
+            <h1 class="hero-title"><?= $t['myName'] ?> – <?= $t['jobTitle'] ?></h1>
+            <div class="hero-description" v-html="`<?= $t['description'] ?? '' ?>`"></div>
         </div>
     </div>
 
@@ -47,7 +41,7 @@ require 'components/headerMenu.php';
         <div v-if="filterTag" class="flex-center smaller--font-size link text--white" style="position: absolute; top: 0" @click="filterBy(null)"><span :style="{color: common.tags[filterTag].color, fontFamily: 'var(--font-logos)' }" class="small--font-size mr-05">{{common.tags[filterTag].icon}}</span> filtered by {{filterTag}} <span class="big--font-size ml-025 light">&times;</span></div>
         <div v-for="(item, i) in items" :key="i" v-show="!item.hide" class="portfolio-item">
 
-            <img :src="item.img" class="img" alt="item-image" loading="lazy" @click="selectedItem = item, selectedItemIndex = i, document.querySelector('html').classList.add('hide-scroll')">
+            <img :src="item.img" class="img" :alt="item.title || item.category" loading="lazy" @click="selectedItem = item, selectedItemIndex = i, document.querySelector('html').classList.add('hide-scroll')">
 
             <div v-if="item.title || item.description" class="portfolio-item-content">
                 <div v-if="item.title" class="item-title" v-html="item.title"></div>
@@ -78,7 +72,7 @@ require 'components/headerMenu.php';
             <div class="nav-arrow" @click="changeItem(1)"></div>
         </div>
         <div class="popup-view__container popup-view__container--fullWidth">
-            <img :src="selectedItem.img" alt="image">
+            <img :src="selectedItem.img" :alt="selectedItem.title || selectedItem.category">
             <!-- TOP -->
             <div class="popup-view__container__close" @click="selectedItem = null, document.querySelector('html').classList.remove('hide-scroll')">&times;</div>
 
