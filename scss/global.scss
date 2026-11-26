@@ -96,6 +96,10 @@ body {
   }
 }
 
+[v-cloak] {
+    display: none;
+}
+
 /* ----------------------------------------------- */
 
 /* Change autocomplete styles in WebKit */

@@ -1,5 +1,5 @@
 <!-- HEADER MENU -->
-<div class="app-header-menu" v-scope='{ 
+<div class="app-header-menu" v-cloak v-scope='{ 
     langMenuState : false, 
     langs: <?= json_encode($i18n["availableLanguages"]) ?> , 
     selectedLang: "<?= $i18n["selectedLanguage"] ?>",

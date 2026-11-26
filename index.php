@@ -3,7 +3,7 @@ require 'components/header.php';
 require 'components/headerMenu.php';
 ?>
 
-<div class="home" v-scope='{ 
+<div class="home" v-cloak v-scope='{ 
     items: <?= file_get_contents("items/items.json") ?>,
     common: <?= file_get_contents("items/common.json") ?>,
     selectedItem: null,
