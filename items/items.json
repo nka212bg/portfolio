@@ -37,7 +37,7 @@
   },
   {
     "title": "Morse app",
-    "description": "A lightweight utility for converting Morse code to text and text to Morse code. It has authentication, automatic alphabet detection, and end-to-end encryption for secure communication. The app also includes sound output customization to generate a distinctive radio transmission signature. With a clean, themeable neumorphic UI, it runs smoothly on any modern browser.<br><br><a href=\"https://portfolio.metatronprime.com/morse\" target=\"_blank\">Visit site </a>",
+    "description": "A lightweight utility for converting Morse code to text and text to Morse code. It has authentication, automatic alphabet detection, and end-to-end encryption for secure communication. The app also includes sound output customization to generate a distinctive radio transmission signature. With a clean, themeable neumorphic UI, it runs smoothly on any modern browser.<br><br><a href=\"https://portfolio.metatronprime.com/__dev__/morse\" target=\"_blank\">Visit site </a>",
     "img": "/items/img/morse.jpg",
     "category": "Dev",
     "tags": [
@@ -154,7 +154,7 @@
   },
   {
     "title": "Buspas Inc.",
-    "description": "Design and WordPress implementation of the <a href=\"https://buspas.com/en\" target=\"_blank\">Buspas </a> website",
+    "description": "Design and WordPress implementation of the <a href=\"https://buspas.com\" target=\"_blank\">Buspas </a> website",
     "img": "/items/img/buspas.jpg",
     "category": "Dev",
     "tags": [

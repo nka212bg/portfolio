@@ -123,7 +123,7 @@ $jsonLd = [
     <script src="script/petite-vue.js" defer init></script>
 
     <script src="script/main.js"></script>
-    <script src="https://portfolio.metatronprime.com/analitics/analitics.js" async></script>
+    <script src="https://portfolio.metatronprime.com/__dev__/analitics/analitics.js" async></script>
     <script src="https://chat.oceandiv.com/chat-api/frame?id=1&dark&hue=205" async></script>
 
     <!-- Schema.org JSON-LD markup -->
